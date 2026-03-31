@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Der Broschürenbeitrag</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📄 Hefteintrag <span class="number">17</span>: Textsorte im Detail: Der Broschürenbeitrag (z. B. für Eltern – informierend und seriös)</h1>
+
+    <section>
+        <h2>🏫 <span class="number">1.</span> Das Prüfungsszenario: Deine Rolle als Schul-Experte</h2>
+        <div class="box fact-box">
+            <p>Bei dieser Textsorte lautet die Rahmensituation in der Abituraufgabe oft so: <em>„Ihre Schule möchte sich als Medienschule profilieren und gibt eine Informationsbroschüre für Eltern heraus.“</em> oder <em>„Anlässlich einer Projektwoche erscheint eine Info-Broschüre.“</em></p>
+            <p>Dein Auftrag ist es, für genau dieses Heftchen einen zusammenhängenden, informativen Text zu schreiben.</p>
+        </div>
+        <p>Typische Themen sind hier Dinge, die Eltern direkt betreffen oder Sorgen bereiten könnten: Die Nutzung von Social Media, das Schreiben im digitalen Zeitalter (Stirbt die Handschrift?) oder der Dialekt in der Schule.</p>
+    </section>
+
+    <section>
+        <h2>👨‍👩‍👧‍👦 <span class="number">2.</span> Die Zielgruppe: Wie spricht man mit Eltern?</h2>
+        <p>Wenn Eltern die <span class="smart-word">Adressaten</span> sind, ist das Textziel meistens eine Mischung aus Aufklärung und Beruhigung.</p>
+        
+        <div class="box smart-box">
+            <ul>
+                <li><strong>Das <span class="smart-word">Sprachniveau</span>:</strong> Du darfst auf keinen Fall jugendliche Umgangssprache verwenden. Eltern erwarten einen seriösen, erwachsenen Text. Gleichzeitig darfst du aber auch nicht wie ein Universitätsprofessor schreiben, denn nicht jedes Elternteil hat studiert.</li>
+                <li><strong>Der <span class="smart-word">Übersetzer-Trick</span>:</strong> Wenn im Material hochkomplexe wissenschaftliche Studien stehen (z. B. zur Gehirnentwicklung bei der Smartphone-Nutzung), ist es dein Job, diese Studien in einfache, verdauliche Sätze zu übersetzen. Zeige den Eltern, was das für den Alltag ihrer Kinder bedeutet.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🏗️ <span class="number">3.</span> Der Aufbau eines Broschürenbeitrags</h2>
+        <p>Ein Text in einer Broschüre ist im Grunde wie ein guter Artikel in einem Magazin (z. B. im "Spiegel" oder im "Focus") aufgebaut:</p>
+        
+        <div class="box def-box">
+            <ul>
+                <li><strong>Die <span class="smart-word">Überschrift</span>:</strong> Wenn die Aufgabe keinen Titel vorgibt, musst du dir einen sachlichen, aber ansprechenden Titel ausdenken (z. B. „Zwischen Wischen und Tippen: Warum die Handschrift auch heute noch wichtig ist“).</li>
+                <li><strong>Der <span class="smart-word">Teaser</span> (Die Einleitung):</strong> Hol die Eltern in ihrer Lebensrealität ab. Ein guter Start ist ein Alltagsbeispiel oder eine Frage. <em>Beispiel: „Liebe Eltern, werfen Sie einen Blick in das Kinderzimmer: Das Smartphone ist allgegenwärtig. Viele von Ihnen fragen sich zu Recht...“</em></li>
+                <li><strong>Der Hauptteil (Der Trick mit den <span class="smart-word">Zwischenüberschriften</span>):</strong> Da eine Broschüre gut lesbar sein muss, ist es ein genialer Trick (der viel Eindruck bei den Korrektoren macht), wenn du für deine Sinnabschnitte kleine Zwischenüberschriften erfindest. (z. B. <span class="number">1.</span> Die Chancen der Digitalisierung, <span class="number">2.</span> Die Risiken für die Identitätsbildung, <span class="number">3.</span> Unser Weg an der Schule).</li>
+                <li><strong>Der <span class="smart-word">Schluss</span>:</strong> Du fasst die wichtigsten Infos zusammen. Da du für die eigene Schule schreibst, ist hier ein konstruktiver Ausblick oder ein kleiner <span class="smart-word">Appell</span> an die Zusammenarbeit zwischen Schule und Elternhaus sehr passend.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>📜 <span class="number">4.</span> Die Zitier-Regel für Broschüren</h2>
+        <p>Genauso wie beim Vortrag (Hefteintrag <span class="number">16</span>) gilt hier fast immer die redaktionelle Vorgabe: <strong>Keine Zeilennummern!</strong></p>
+        
+        <div class="box fact-box">
+            <p>In einer echten Info-Broschüre stehen keine Klammern mit (vgl. Z. <span class="number">15</span>-<span class="number">18</span>).</p>
+        </div>
+
+        <div class="box smart-box">
+            <p>Du baust dein Material indirekt ein, indem du die Quelle nennst: <em>„Ein Blick auf die aktuellen Zahlen des Statistischen Bundesamtes zeigt, dass...“</em> oder <em>„Wie die Erziehungswissenschaftlerin Susanne Müller in ihrem aktuellen Aufsatz betont, ist es wichtig, dass...“</em>. Das macht deinen Text flüssig und professionell.</p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
