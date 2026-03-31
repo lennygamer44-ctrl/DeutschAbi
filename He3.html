@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Aufgabenstellung analysieren</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎯 Hefteintrag 3: Der „Kern der Aufgabenstellung“ – Wie du die Aufgabe richtig liest und analysierst</h1>
+
+    <p>Der wichtigste Schritt, bevor du überhaupt einen Text planst, ist das knallharte Analysieren der Aufgabenstellung. Wer hier schlampt, schreibt am Thema vorbei und riskiert <span class="number">0</span> Punkte. Das Ministerium gibt in seiner offiziellen Checkliste exakt vor, welche Leitfragen du dir beim Lesen stellen musst.</p>
+
+    <section>
+        <h2>❓ 1. Die <span class="number">5</span> W-Fragen der Aufgabenanalyse</h2>
+        <p>Du nimmst dir deinen Textmarker und suchst in dem kleinen Textblock der Aufgabe gezielt nach den Antworten auf diese Fragen:</p>
+        
+        <div class="box def-box">
+            <ul>
+                <li><strong>Was ist der Kern der Aufgabenstellung?</strong> Was sollst du am Ende abgeben? Ein Lexikonartikel? Ein Vortrag? Das ist deine <span class="smart-word">Textsorte</span>.</li>
+                <li><strong>Welche Hilfen bietet die Aufgabenstellung?</strong> Die Aufgabe gibt oft einen Situationsrahmen vor (z. B. "Die Theatergruppe Ihrer Schule inszeniert Goethes Schauspiel Faust" oder "An Ihrer Schule wird ein 'Abend der Wissenschaft' veranstaltet"). Dieser Rahmen ist deine absolute Hilfe für die Einleitung.</li>
+                <li><strong>Welche Begriffe müssen definiert werden?</strong> Wenn das Thema "Kulturtechnik Schreiben im digitalen Zeitalter" lautet, musst du dir sofort notieren: Ich muss in meinem Text erklären, was "Kulturtechnik" und "digitales Zeitalter" in diesem Zusammenhang überhaupt bedeuten.</li>
+                <li><strong>Was muss ich für die Bearbeitung dieser Aufgabe können bzw. wiederholen?</strong> Verlangt die Aufgabe explizit "eigene Kenntnisse und Erfahrungen" oder "literaturgeschichtliche Kenntnisse"?</li>
+                <li><strong>Kann ich die Aufgabe mit meinem Wissen und meinen Fähigkeiten gut bearbeiten?</strong> Wenn du das geforderte Hintergrundwissen (z. B. zur Epoche um <span class="number">1900</span>) nicht hast, wähle eine andere Aufgabe.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🏗️ 2. Der Aufbau einer typischen Aufgabenstellung (Format <span class="number">III</span>)</h2>
+        <p>Aufgaben für das materialgestützte Informieren sind immer nach einem ganz bestimmten Muster aufgebaut. Du musst lernen, diesen Bauplan zu entschlüsseln:</p>
+        
+        <div class="box fact-box">
+            <ul>
+                <li><strong>Die Rahmensituation:</strong> Hier wird die Geschichte erzählt. Zum Beispiel: "Ihre Schule will sich zukünftig als Medienschule profilieren.". Das bedeutet, du bist in der Rolle eines Schülers dieser Schule.</li>
+                <li><strong>Der Arbeitsauftrag (Der <span class="smart-word">Operator</span>):</strong> Hier steht das magische Wort. Meistens lautet es "Verfassen Sie...". Das bedeutet, du musst einen zusammenhängenden Text produzieren.</li>
+                <li><strong>Die Inhaltsangabe:</strong> Hier steht genau, worüber du informieren sollst. Zum Beispiel: "...einen informativen Text über das Menschenbild der Klassik!".</li>
+                <li><strong>Der Quellen-Befehl:</strong> Hier steht, wie du mit dem Material umgehen sollst. Das lautet fast immer: "Verwenden Sie die Informationen aus den folgenden Materialien!".</li>
+                <li><strong>Die redaktionellen Vorgaben:</strong> Ganz am Ende oder in Klammern steht dein formales Ziel, z. B. "Umfang: ca. <span class="number">1000</span> Wörter".</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>💡 3. Dein Prüfungs-Hack: <span class="smart-word">Operatoren</span> markieren</h2>
+        <p>Du darfst den Text der Aufgabe nicht einfach nur lesen. Du musst jeden <span class="smart-word">Operator</span> (das ist das Verb, das dir sagt, was du tun sollst) einkreisen.</p>
+        
+        <div class="box smart-box">
+            <ul>
+                <li>Steht da <strong>"Erläutern Sie darin..."</strong>, musst du Zusammenhänge verständlich erklären.</li>
+                <li>Steht da <strong>"Gehen Sie an geeigneter Stelle darauf ein..."</strong>, darfst du diesen Punkt auf keinen Fall vergessen, sonst gibt es massiven Punktabzug.</li>
+                <li>Steht da <strong>"Beziehen Sie eigene Kenntnisse ein"</strong>, musst du dein Vorwissen aus dem Unterricht (oder unsere späteren Kapitel) mit den Materialien verknüpfen.</li>
+            </ul>
+            <p>Wenn du diesen Kern einmal richtig entschlüsselt hast, hast du dir quasi selbst ein Inhaltsverzeichnis für deinen Aufsatz geschrieben.</p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
