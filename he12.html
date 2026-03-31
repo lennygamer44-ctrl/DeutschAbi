@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Adressatenorientierung verstehen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>👥 Hefteintrag <span class="number">12</span>: Adressatenorientierung verstehen – Wer ist dein Publikum und warum ändert das alles?</h1>
+
+    <section>
+        <h2>❓ <span class="number">1.</span> Was ist "Adressatenorientierung" überhaupt?</h2>
+        <p>In einer normalen Textanalyse schreibst du für deinen Deutschlehrer. Beim Format <span class="number">III</span> (Materialgestütztes Informieren) ist das fast nie so!</p>
+        
+        <div class="box def-box">
+            <p>Die Aufgabenstellung gibt dir in der Regel ein kleines Rollenspiel (eine Rahmensituation) vor, bei der eine <span class="smart-word">Adressatenorientierung</span> denkbar ist.</p>
+            <p>Der Adressat ist dein <strong>Publikum</strong> – also die Personen, die deinen fertigen Text lesen oder hören sollen.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🕵️‍♂️ <span class="number">2.</span> Wo versteckt sich das Publikum in der Aufgabe?</h2>
+        <p>Du musst die Aufgabenstellung lesen wie ein Detektiv. Hier sind echte Beispiele aus den bayerischen Vorgaben, wer dein Publikum sein könnte:</p>
+        
+        <div class="box fact-box">
+            <ul>
+                <li><strong>Eltern:</strong> Du schreibst zum Beispiel eine Broschüre für Eltern zum Thema digitales Lernen.</li>
+                <li><strong>Mitschüler:</strong> Du erstellst gemeinsam mit anderen Autoren ein Schülerlexikon.</li>
+                <li><strong>Ein gemischtes Publikum:</strong> Bei einer Projektzeitung oder einem Vortrag richtet sich dein Text oft an interessierte Schülerinnen und Schüler, Eltern und Lehrkräfte.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>⚖️ <span class="number">3.</span> Die <span class="number">drei</span> goldenen Konsequenzen (Warum das alles ändert)</h2>
+        <p>Wenn du deinen Adressaten gefunden hast, darfst du nicht einfach blind losschreiben.</p>
+        
+        <div class="box smart-box">
+            <p>Die offizielle Lehrer-Checkliste sagt ganz klar: Aus der Aufgabenstellung und ihrem <span class="smart-word">Adressatenbezug</span> lassen sich oft zentrale Hinweise zur Gestaltung des Aufsatzes ableiten.</p>
+        </div>
+        
+        <p>Das hat <span class="number">drei</span> harte Konsequenzen für dich, die du abarbeiten musst:</p>
+
+        <div class="box def-box">
+            <p><strong>Konsequenz A: Das <span class="smart-word">Sprachniveau</span> anpassen</strong></p>
+            <p>Du musst sofort entscheiden, welches Sprachniveau zu verwenden ist. Wenn du für ein Schultheater-Publikum schreibst, darf der Text weder zu umgangssprachlich noch zu wissenschaftlich sein.</p>
+            <p><em>Beispiel:</em> Wenn du für Fünftklässler schreibst, erklärst du Fremdwörter. Wenn du für Lehrer schreibst, kannst du Fachbegriffe nutzen. Da du meistens für ein "gemischtes" Schulpublikum schreibst, wählst du eine höfliche, klare und erwachsene Sprache – ohne abgehobene Professoren-Wörter.</p>
+        </div>
+
+        <div class="box fact-box">
+            <p><strong>Konsequenz B: Das <span class="smart-word">Textziel</span> festlegen</strong></p>
+            <p>Das Publikum bestimmt, welches Ziel der Text verfolgen soll. Frag dich: <em>Soll ich die Leute einfach nur sachlich informieren, oder soll ich sie vielleicht auch zu einem bestimmten Handeln auffordern?</em></p>
+            <p><em>Beispiel:</em> Bei einem Lexikonartikel informierst du nur ganz trocken. Bei einem Vortrag vor Eltern über Social Media willst du vielleicht am Ende dazu aufrufen, dass man mehr miteinander redet.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Konsequenz C: Den Inhalts-Filter einschalten (Die "Übersetzer"-Rolle)</strong></p>
+            <p>Du musst prüfen, welche Inhalte aus den Materialien zielführend verwendet werden können und ob du sie gegebenenfalls umformulieren musst.</p>
+            <p><em>Was das für dich bedeutet:</em> Du bekommst vom Ministerium oft sehr sperrige, wissenschaftliche Materialien (z. B. Sprachwissenschaftler oder Professoren). Dein Publikum (z. B. Eltern oder Schüler) versteht dieses Fachchinesisch vielleicht gar nicht. Dein Job ist es, diese komplizierten Materialien in normale, verständliche Sprache zu <strong>"übersetzen"</strong>. Das bringt massiv Punkte!</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>💡 <span class="number">4.</span> Der "So-tust-als-ob"-Trick für die Klausur</h2>
+        <div class="box smart-box">
+            <p>Um die Adressatenorientierung in der Prüfung nicht zu vergessen, stell dir bildlich vor, wie diese Menschen vor dir sitzen.</p>
+            <p>Wenn du einen Vortrag vor Eltern und Lehrern schreibst, beginnst du auch logischerweise mit einer höflichen Anrede (z. B. <em>"Sehr geehrte Lehrkräfte, liebe Eltern..."</em>). Das zeigt dem Korrektor im ersten Satz: <strong>Aha, der Schüler hat den Adressaten verstanden!</strong></p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
