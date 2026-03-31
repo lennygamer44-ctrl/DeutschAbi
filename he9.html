@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Redaktionelle Vorgaben</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📝 Hefteintrag <span class="number">9</span>: Die "redaktionellen Vorgaben": Aufbau, Formatvorgaben und was das Ministerium damit meint</h1>
+
+    <div class="box fact-box">
+        <p>Wenn du dir die alten Abituraufgaben durchliest, findest du oft ganz am Ende eines Arbeitsauftrags einen unscheinbaren Satz oder Klammerzusatz, der mit "redaktionelle Vorgaben" oder "Hinweise der Redaktion" beginnt. Viele Schüler überlesen das im Prüfungsstress. Das ist fatal, denn hier stehen die strengen Spielregeln, an die du dich halten musst, um das Format nicht zu verfehlen.</p>
+        <p>Stell dir vor, du bist ein echter Journalist oder Autor und dein Chef (die Redaktion) gibt dir genaue Anweisungen für deinen Text. Hältst du dich nicht daran, wird dein Text nicht gedruckt – im Abitur bedeutet das Punktabzug.</p>
+    </div>
+
+    <section>
+        <h2>📏 <span class="number">1.</span> Die Längenvorgabe (Der Umfang)</h2>
+        <p>Das ist die häufigste und wichtigste redaktionelle Vorgabe. Das Ministerium gibt dir hier einen extrem genauen Rahmen vor, wie viel du schreiben musst:</p>
+        
+        <div class="box def-box">
+            <ul>
+                <li>Bei einem Beitrag für ein Schülerlexikon heißt es oft: "Der Umfang soll ca. <span class="number">1000</span> Wörter umfassen."</li>
+                <li>Bei Vortragstexten oder Beiträgen für eine Broschüre wird meistens gefordert: "Ihr Vortragstext soll etwa <span class="number">1200</span> Wörter umfassen."</li>
+                <li>Manchmal gibt es auch eine feste Spanne: "Ihr Beitrag soll <span class="number">1200</span> bis <span class="number">1500</span> Wörter umfassen."</li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Warum das wichtig ist:</strong> Schreibst du nur <span class="number">600</span> Wörter, hast du das Thema verfehlt, weil du offensichtlich zu wenig Material ausgewertet oder zu wenig <span class="smart-word">Eigenwissen</span> eingebracht hast. Schreibst du <span class="number">2500</span> Wörter, hast du nicht gelernt, Wichtiges von Unwichtigem zu trennen.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🏗️ <span class="number">2.</span> Die Vorgabe zum Aufbau (Die Textsorte)</h2>
+        <p>Oft steht in den Aufgaben: "Der Aufbau des informativen Textes ist zu beachten" oder ganz konkret "Der Aufbau des Lexikonartikels ist zu beachten."</p>
+        
+        <div class="box fact-box">
+            <p>Das Kultusministerium meint damit: Schreib nicht einfach einen endlosen Fließtext!</p>
+        </div>
+
+        <div class="box def-box">
+            <ul>
+                <li>Wenn du einen <span class="smart-word">Lexikonartikel</span> schreibst, erwartet der Korrektor absolute Sachlichkeit, klare Absätze und vielleicht sogar Zwischenüberschriften.</li>
+                <li>Wenn du nach einem gelieferten "Muster" arbeiten sollst (manchmal ist Material <span class="number">1</span> ein solches Muster), dann musst du die Struktur dieses Musters exakt kopieren.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>💬 <span class="number">3.</span> Zitier-Vorgaben für bestimmte Textformate</h2>
+        <p>Bei schulischen Textanalysen hast du gelernt, immer brav die Zeilennummer in Klammern dahinter zu schreiben (vgl. Z. <span class="number">12</span>-<span class="number">14</span>). Beim materialgestützten Informieren gibt es hier oft eine Sonderregel, die in den Vorgaben versteckt ist!</p>
+        
+        <div class="box def-box">
+            <p>In Aufgaben zu Beiträgen für Broschüren oder bei journalistischen Varianten steht oft wörtlich: "Bezüge auf die Materialien können ohne Zeilenangabe unter Nennung der Autorin bzw. des Autors und ggf. des Titels erfolgen."</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Was das für dich heißt:</strong> Ein echter Vortrag oder Lexikonartikel hat <strong>keine</strong> Zeilenangaben im Text! Du schreibst also einfach: <em>"Wie die Autorin Susanne Scheer in ihrem Artikel betont, ist..."</em> und lässt die Zeilennummern komplett weg. Das macht das Schreiben viel flüssiger.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🏷️ <span class="number">4.</span> Vorgaben zu Titeln und Überschriften</h2>
+        <p>Achte genau darauf, ob die Redaktion (die Aufgabenstellung) dir schon eine Überschrift diktiert oder ob du dir selbst eine ausdenken musst.</p>
+        
+        <div class="box fact-box">
+            <ul>
+                <li><strong>Vorgegebener Titel:</strong> In manchen Aufgaben steht: "Verfassen Sie zu diesem Zweck einen Beitrag mit dem Titel Faust <span class="number">2012</span>..." oder "Verfassen Sie diesen Vortragstext mit dem Titel „Unterwegs – Das Motiv des Reisens in der Literatur der Romantik“!". Dann schreibst du exakt diesen Titel groß über deinen Text.</li>
+                <li><strong>Eigener Titel:</strong> Wenn dort steht "Finden Sie eine geeignete Überschrift!", dann musst du dir am Ende selbst eine passende, sachliche Überschrift ausdenken. Fehlt sie, kostet das formale Punkte.</li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
