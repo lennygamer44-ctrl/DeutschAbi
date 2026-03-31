@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Stoffsammlung vor dem Schreiben</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🧠 Hefteintrag 7: Stoffsammlung vor dem Schreiben – Tabellarische Zusammenstellung, Mindmapping oder Clustern</h1>
+
+    <div class="box fact-box">
+        <p>Wenn du die Aufgabenstellung verstanden und das Material gesichtet hast, juckt es oft in den Fingern, sofort den ersten Satz zu schreiben. <strong>Tu das nicht!</strong> Wer beim Materialgestützten Informieren ohne Netz und doppelten Boden losschreibt, verliert nach <span class="number">400</span> Wörtern komplett den Faden, vergisst wichtiges Material und schreibt am Ende ein heilloses Durcheinander. Das gibt massiv Punktabzug in der Struktur-Note.</p>
+        <p>Die offizielle Checkliste des Ministeriums für die Abiturvorbereitung verlangt von dir, dass du dich ehrlich fragst: <em>„Welche Methoden der <span class="smart-word">Stoffsammlung</span> und der <span class="smart-word">Strukturierung</span> beherrsche ich?“</em>.</p>
+    </div>
+
+    <p>Dafür gibt es <span class="number">drei</span> vom Kultusministerium offiziell vorgeschlagene Techniken zur Stoffsammlung. Du musst für dich herausfinden, welche davon am besten zu dir passt:</p>
+
+    <section>
+        <h2>📊 <span class="number">1.</span> Die tabellarische Zusammenstellung (Der Liebling für Format <span class="number">III</span>)</h2>
+        <p>Da du beim Materialgestützten Informieren viele verschiedene Quellen (Texte, Bilder, Statistiken) hast, ist eine Tabelle oft die sicherste Methode.</p>
+        
+        <div class="box def-box">
+            <p><strong>Wie es funktioniert:</strong> Nimm ein Schmierzettel-Blatt quer. Mache dir Spalten für die Unterthemen, die du in der Aufgabenstellung (den versteckten Hilfen) gefunden hast.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Beispiel:</strong> Du sollst über den "Dialektgebrauch" informieren. Deine Spalten heißen:</p>
+            <ul>
+                <li><strong><span class="number">1.</span></strong> Tendenzen</li>
+                <li><strong><span class="number">2.</span></strong> Einstellungen</li>
+                <li><strong><span class="number">3.</span></strong> Schul-Maßnahmen</li>
+            </ul>
+            <p>Jetzt überfliegst du Material <span class="number">1</span> bis <span class="number">8</span>. Wenn Material <span class="number">2</span> etwas über die Schule sagt, schreibst du in Spalte <span class="number">3</span> einfach ein Stichwort und "<strong>M<span class="number">2</span></strong>" dazu. So hast du am Ende alle Infos aus den Materialien perfekt nach Absätzen sortiert.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🗺️ <span class="number">2.</span> Das Mindmapping (Für die visuellen Typen)</h2>
+        <p>Wenn du Tabellen hasst, ist die Mindmap dein bester Freund.</p>
+        
+        <div class="box def-box">
+            <p><strong>Wie es funktioniert:</strong> Schreibe das Hauptthema (z. B. "Schreiben im digitalen Zeitalter") dick in die Mitte deines Schmierzettels.</p>
+            <p>Von dort aus ziehst du Äste für die Teilbereiche deines Textes (z. B. Ast <span class="number">1</span>: "Handschrift", Ast <span class="number">2</span>: "Emojis", Ast <span class="number">3</span>: "Wissenschaftliche Sicht").</p>
+            <p>An diese Äste schreibst du nun die passenden Stichwörter aus deinem <span class="smart-word">Eigenwissen</span> und die Nummern der Materialien, in denen dazu etwas steht.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🌪️ <span class="number">3.</span> Das Clustern (Die schnelle Chaos-Methode)</h2>
+        <p>Clustern ist super, wenn du anfangs noch gar nicht weißt, wie du den Text aufbauen sollst.</p>
+        
+        <div class="box def-box">
+            <p><strong>Wie es funktioniert:</strong> Du schreibst einfach alle Begriffe, Fakten aus den Materialien und Ideen aus deinem Kopf ungeordnet auf ein Blatt.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p>Danach nimmst du Textmarker in verschiedenen Farben und markierst alles, was inhaltlich zusammenpasst, in derselben Farbe (z. B. alles zum Thema "Risiken von Social Media" rot, alles zu "Chancen" grün). Jeder Farb-Block wird später ein eigener Absatz in deinem Text.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>⏱️ <span class="number">4.</span> Der Zeitfaktor und die Flexibilität</h2>
+        <p>Die Schüler-Checkliste wirft hierzu zwei extrem wichtige Leitfragen auf, die du für dein Zeitmanagement im Abitur klären musst:</p>
+        
+        <div class="box fact-box">
+            <p><strong>Frage <span class="number">1</span>:</strong> <em>„Wie lange brauche ich durchschnittlich, um die <span class="smart-word">Grobstruktur</span> eines Aufsatzes zu entwerfen?“</em>.</p>
+            <p><strong>Mein Tipp:</strong> Investiere hier lieber <span class="number">15</span> bis <span class="number">20</span> Minuten. Diese Zeit holst du beim Schreiben doppelt wieder rein, weil du nicht mehr nachdenken musst, was als Nächstes kommt, sondern nur noch, wie du es formulierst.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Frage <span class="number">2</span>:</strong> <em>„Wie gehe ich mit der Tatsache um, dass sich die Textstruktur im Verlauf des Schreibprozesses unter Umständen verändert?“</em>.</p>
+            <p><strong>Die Antwort:</strong> Keine Panik! Dein Schmierzettel ist nicht in Stein gemeißelt. Wenn dir beim Schreiben zu Absatz <span class="number">2</span> plötzlich noch eine gute Idee aus Material <span class="number">4</span> einfällt, bau sie ein. Eine Stoffsammlung ist nur dein Sicherheitsnetz, kein starres Gefängnis.</p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
