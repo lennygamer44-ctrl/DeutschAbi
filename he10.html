@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Das Längen-Problem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📏 Hefteintrag <span class="number">10</span>: Das Längen-Problem – Wie du deine Wortzahl pro DIN-A4-Seite vorab berechnest</h1>
+
+    <div class="box fact-box">
+        <p>Eine der größten Panik-Situationen im Abitur entsteht, wenn Schüler am Ende ihres Textes ankommen und sich fragen: "Habe ich überhaupt genug geschrieben?". Da die Aufgaben zum materialgestützten Informieren extrem strenge Längenvorgaben haben (oft ca. <span class="number">1000</span>, <span class="number">1200</span> oder sogar <span class="number">1500</span> Wörter), musst du diese Hürde intelligent umgehen.</p>
+    </div>
+
+    <section>
+        <h2>🚫 <span class="number">1.</span> Warum du auf keinen Fall in der Prüfung Wörter zählen darfst</h2>
+        <div class="box def-box">
+            <p>Stell dir vor, du bist in den letzten <span class="number">15</span> Minuten deiner Prüfung. Wenn du jetzt anfängst, <span class="number">1200</span> Wörter einzeln mit dem Stift abzuzählen, verlierst du nicht nur völlig den Verstand, sondern auch extrem wertvolle Zeit. Diese Minuten brauchst du zwingend für die inhaltliche und formalsprachliche <span class="smart-word">Überarbeitung</span> (Fehlerkorrektur) deines Aufsatzes.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🏛️ <span class="number">2.</span> Der offizielle Rat des Kultusministeriums</h2>
+        <p>In der offiziellen Vorbereitungs-Checkliste für Schüler wird dieser Punkt ganz konkret als Pflichtaufgabe für die Vorbereitungszeit genannt:</p>
+        
+        <div class="box fact-box">
+            <ul>
+                <li>Du musst vor dem Abitur deine durchschnittliche Wortzahl pro handgeschriebener DIN-A4-Seite ermitteln (genau wie du es vielleicht aus dem Englisch- oder Französisch-Unterricht kennst).</li>
+                <li>Du musst fähig sein, davon ausgehend abzuschätzen, wie viele Seiten du bei einer bestimmten Wortzahl schreiben musst.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🧮 <span class="number">3.</span> So berechnest du deinen persönlichen "Seiten-Faktor" (Deine Hausaufgabe für heute)</h2>
+        <p>Damit du im Abitur blind weißt, wann du am Ziel bist, machst du jetzt in der Vorbereitung genau einmal folgende Rechnung:</p>
+        
+        <div class="box smart-box">
+            <ul>
+                <li><strong>Schritt <span class="number">1</span>:</strong> Nimm dir eine alte Deutsch-Klausur oder Hausaufgabe von dir, die du auf normalem DIN-A4-Papier (liniert oder kariert, je nachdem, was deine Schule im Abi austeilt) geschrieben hast. Achte darauf, dass es deine "normale" Handschrift unter Zeitdruck ist.</li>
+                <li><strong>Schritt <span class="number">2</span>:</strong> Zähle die Wörter in <span class="number">drei</span> ganz normalen, vollen Zeilen. (Beispiel: Zeile <span class="number">1</span> hat <span class="number">8</span> Wörter, Zeile <span class="number">2</span> hat <span class="number">9</span> Wörter, Zeile <span class="number">3</span> hat <span class="number">7</span> Wörter. Zusammen = <span class="number">24</span> Wörter).</li>
+                <li><strong>Schritt <span class="number">3</span>:</strong> Teile diese Zahl durch <span class="number">3</span>, um den Durchschnitt pro Zeile zu bekommen (<span class="number">24</span> ÷ <span class="number">3</span> = <span class="number">8</span> Wörter pro Zeile).</li>
+                <li><strong>Schritt <span class="number">4</span>:</strong> Zähle, wie viele Zeilen du normalerweise auf eine komplette DIN-A4-Seite schreibst (z. B. <span class="number">30</span> Zeilen).</li>
+                <li><strong>Schritt <span class="number">5</span> (Dein <span class="smart-word">Seiten-Faktor</span>):</strong> Multipliziere die Wörter pro Zeile mit den Zeilen pro Seite (<span class="number">8</span> Wörter x <span class="number">30</span> Zeilen = <span class="number">240</span> Wörter pro DIN-A4-Seite).</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>📈 <span class="number">4.</span> Die sichere Hochrechnung für die Abitur-Klausur</h2>
+        <p>Wenn du deinen Seiten-Faktor kennst, schreibst du ihn dir im Abitur ganz oben als geheime Notiz auf dein Schmierblatt. Dann rechnest du einmal kurz die Vorgabe aus der Aufgabe um:</p>
+        
+        <div class="box def-box">
+            <ul>
+                <li>Verlangt die Aufgabe ca. <span class="number">1000</span> Wörter und dein Faktor ist <span class="number">240</span>, rechnest du: <span class="number">1000</span> ÷ <span class="number">240</span> = ca. <span class="number">4,1</span>. <strong>Dein Ziel:</strong> Du musst gut <span class="number">4</span> volle Seiten schreiben.</li>
+                <li>Verlangt die Aufgabe ca. <span class="number">1200</span> Wörter und dein Faktor ist <span class="number">240</span>, rechnest du: <span class="number">1200</span> ÷ <span class="number">240</span> = exakt <span class="number">5</span>. <strong>Dein Ziel:</strong> Du musst exakt <span class="number">5</span> volle Seiten schreiben.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>⚖️ <span class="number">5.</span> Was bedeutet das kleine Wörtchen "ca." oder "etwa"?</h2>
+        <div class="box fact-box">
+            <p>Das Kultusministerium schreibt in den Vorgaben fast immer "ca. <span class="number">1000</span> Wörter" oder "etwa <span class="number">1200</span> Wörter". Das bedeutet, die Korrektoren zählen nicht kleinlich nach, ob du <span class="number">1180</span> oder <span class="number">1215</span> Wörter hast. Es gibt eine inoffizielle <span class="smart-word">Toleranzgrenze</span> von meistens +/- <span class="number">10</span> Prozent.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Vorsicht:</strong> Wenn die Aufgabe <span class="number">1200</span> verlangt und du gibst nur <span class="number">2,5</span> Seiten ab, ist dem Lehrer sofort beim bloßen Hinsehen klar, dass dir massiv Inhalt, Materialauswertung oder Eigenwissen fehlt. Damit rutschst du extrem schnell in den Bereich der mangelhaften Noten (<span class="number">0</span>-<span class="number">4</span> Punkte). Durch die Seiten-Berechnung bist du vor diesem tödlichen Fehler sicher!</p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
