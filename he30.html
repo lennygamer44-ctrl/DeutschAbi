@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Die Erörterungs-Falle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        .highlight-red {
+            color: #c62828;
+            font-weight: bold;
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>⚠️ Hefteintrag <span class="number">30</span>: Die Erörterungs-Falle – Warum deine eigene Meinung hier (meistens) nichts zu suchen hat</h1>
+
+    <section>
+        <h2>🪤 <span class="number">1.</span> Die größte Versuchung im Format <span class="number">III</span></h2>
+        <div class="box fact-box">
+            <p>Du hast dich im Abitur bewusst für das <strong>Format <span class="number">III</span></strong> („Materialgestütztes Verfassen eines informierenden Textes“) entschieden und gegen das Format <span class="number">IV</span> („Materialgestütztes Verfassen eines argumentierenden Textes“).</p>
+            <p><strong>Das Problem:</strong> Das Ministerium wählt oft provokante Themen (z. B. Gendern, Social Media, politische Reden). Das weckt sofort eine eigene, starke Meinung.</p>
+        </div>
+        
+        <div class="box smart-box">
+            <p><strong>Die Falle:</strong> Wenn du anfängst, dich über Autoren aufzuregen (<em>„Meiner Meinung nach ist das Unsinn...“</em>), rutschst du ins Format <span class="number">IV</span> ab. Das ist eine knallharte <strong>Themaverfehlung</strong>.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>📺 <span class="number">2.</span> Die Rolle des neutralen Vermittlers</h2>
+        <div class="box def-box">
+            <p>Beim materialgestützten Informieren bist du wie ein <strong>Nachrichtensprecher der Tagesschau</strong>. Ein Nachrichtensprecher flucht oder jubelt nicht. Er präsentiert die Fakten objektiv, egal wie er privat denkt.</p>
+        </div>
+        
+        <p>Du darfst Argumente im Material gegeneinander abwägen (<em>„Während Material <span class="number">1</span> Vorteile betont, zeigt Material <span class="number">2</span> Nachteile auf.“</em>), aber du darfst am Ende nicht selbst als Richter auftreten.</p>
+
+        <div class="box fact-box">
+            <p><strong>Ausnahme:</strong> Deine Meinung ist nur erlaubt, wenn das Rollenspiel dich ausdrücklich zu einem persönlichen Kommentar auffordert. Das kommt im Format <span class="number">III</span> extrem selten vor.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>⚖️ <span class="number">3.</span> Wie du „bewertest“, ohne deine eigene Meinung zu nennen</h2>
+        <p>Manchmal fordert ein Operator: „Bewerten Sie die Lösungsansätze“. Der Trick heißt <strong>„<span class="smart-word">Kriteriengeleitete Bewertung</span>“</strong>: Du nutzt sachliche Maßstäbe statt Gefühle.</p>
+        
+        <div class="box smart-box">
+            <ul>
+                <li><strong>Kriterium „Umsetzbarkeit“:</strong> <em>„Der Vorschlag aus Material <span class="number">3</span>, Smartphones komplett zu verbieten, ist in der schulischen Praxis kaum kontrollierbar.“</em> (Sachlich, nicht emotional!)</li>
+                <li><strong>Kriterium „Zielgruppe“:</strong> <em>„Die Kampagne verfehlt vermutlich ihre Wirkung, da sie sprachlich nicht auf Jugendliche zugeschnitten ist.“</em></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🧠 <span class="number">4.</span> Das eigene Wissen ≠ Die eigene Meinung</h2>
+        <div class="box fact-box">
+            <ul>
+                <li><strong><span class="smart-word">Eigenwissen</span>:</strong> Du erklärst den Expressionismus, definierst Framing, nennst Beispiele aus „Faust“ oder erklärst Algorithmen (Fakten aus dem Unterricht).</li>
+                <li><strong><span class="smart-word">Meinung</span>:</strong> Du schreibst, wie du dich fühlst oder was du persönlich richtig findest. <strong>Das bleibt draußen!</strong></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🔍 <span class="number">5.</span> Der Kontroll-Check für deinen Text</h2>
+        <p>Scanne deinen Aufsatz in der Überarbeitungsphase nach folgenden <strong>„roten Flaggen“</strong> ab:</p>
+        
+        <div class="box smart-box">
+            <ul>
+                <li><span class="highlight-red">Streiche:</span> „Ich finde“, „Meiner Meinung nach“, „Meines Erachtens“, „Ich bin davon überzeugt“.</li>
+                <li><span class="smart-word">Nutze:</span> „Es lässt sich festhalten, dass...“, „Daraus wird ersichtlich, dass...“, „Die Materialien verdeutlichen insgesamt, dass...“.</li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
