@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Die Arbeitsanweisung zum Material</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📝 Hefteintrag <span class="number">20</span>: Die Arbeitsanweisung zum Material – Die Variation von "Kernaspekte zusammenfassen" bis "als Anregung nutzen"</h1>
+
+    <section>
+        <h2>❗️ <span class="number">1.</span> Warum ein einziges Wort über deine Note entscheidet</h2>
+        <p>Wenn du in der Prüfung dein Material-Dossier (die <span class="number">5</span> bis <span class="number">9</span> beigelegten Zettel) aufschlägst, darfst du nicht einfach wahllos anfangen, bunte Textmarker-Striche zu ziehen.</p>
+        
+        <div class="box def-box">
+            <p>Du musst zuerst den Arbeitsauftrag (den <span class="smart-word">Operator</span>) zum Umgang mit diesem Material in der Aufgabenstellung analysieren.</p>
+        </div>
+
+        <div class="box fact-box">
+            <p>Das Kultusministerium nutzt hier ganz bewusst unterschiedliche Formulierungen. Diese Formulierungen sind ein geheimer Code, der dir sagt, wie viel Freiraum du hast und wie streng du dich an die Papiere klammern musst.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🔍 <span class="number">2.</span> Variante A: Der strenge Auftrag ("Gehen Sie auf die Kernaspekte ein")</h2>
+        <div class="box fact-box">
+            <ul>
+                <li><strong>Die Formulierung:</strong> In der Aufgabe steht beispielsweise: <em>„Gehen Sie bei Ihren Ausführungen auf die Kernaspekte der beigefügten Materialien ein!“</em></li>
+                <li><strong>Was das bedeutet:</strong> Du hast hier eine absolute Vollständigkeits-Pflicht! Du musst aus jedem einzelnen Material den wichtigsten Grundgedanken (den Kernaspekt) herausfiltern und in deinem Text verwerten.</li>
+            </ul>
+        </div>
+        <div class="box def-box">
+            <p><strong>Die Gefahr:</strong> Wenn du bei dieser Formulierung Material <span class="number">4</span> einfach weglässt, weil du es nicht verstanden hast oder es dir nicht passt, gilt die Aufgabe als „nicht vollständig bearbeitet“. Das führt sofort zu Punktabzug.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>⚖️ <span class="number">3.</span> Variante B: Der Standard-Auftrag ("Verwenden Sie die Informationen")</h2>
+        <div class="box fact-box">
+            <ul>
+                <li><strong>Die Formulierung:</strong> Meistens lautet der Satz: <em>„Verwenden Sie für Ihre Darstellung die Informationen aus den folgenden Materialien!“</em> oder <em>„Nutzen Sie dazu die Materialien <span class="number">1</span> bis <span class="number">7</span>!“</em></li>
+                <li><strong>Was das bedeutet:</strong> Das ist der häufigste Fall im Format <span class="number">III</span>. Hier bist du der Filter. Du musst nicht jeden einzelnen Nebensatz aus dem Material abschreiben. Du suchst dir zielgerichtet genau die Informationen heraus, die für dein <span class="smart-word">Textziel</span> (z. B. den Artikel für die Projektzeitung) und deine Zielgruppe relevant und interessant sind.</li>
+            </ul>
+        </div>
+        <div class="box def-box">
+            <p><strong>Die Gefahr:</strong> Du darfst Materialien hier klug zusammenfassen oder bündeln, aber du darfst auch hier nicht die Hälfte der Dokumente komplett ignorieren.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🕊️ <span class="number">4.</span> Variante C: Der freie Auftrag ("Als Anregung nutzen")</h2>
+        <div class="box fact-box">
+            <ul>
+                <li><strong>Die Formulierung:</strong> Manchmal (oft bei journalistischen Texten) steht dort: <em>„Die beigefügten Materialien bieten Ihnen Anregungen für Ihre Ausführungen.“</em></li>
+                <li><strong>Was das bedeutet:</strong> Hier hast du die größte Freiheit! Das Material ist hier nur dein Steinbruch. Du bedienst dich an den Ideen, Statistiken oder Zitaten, die am besten zu deinem eigenen Aufbau passen. Wenn ein Material gar nicht in deine Struktur passt, darfst du es hier in der Regel auch weglassen oder nur am Rande erwähnen.</li>
+            </ul>
+        </div>
+        <div class="box smart-box">
+            <p><strong>Die Gefahr:</strong> Da das Material nur eine "Anregung" ist, rückt bei dieser Formulierung dein <span class="smart-word">Eigenwissen</span> extrem stark in den Vordergrund. Du musst hier viel mehr eigenes literaturgeschichtliches Wissen aus dem Unterricht (oder unseren späteren Kapiteln) einbringen, um die ca. <span class="number">1000</span> Wörter vollzubekommen.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>💡 <span class="number">5.</span> Der Praxis-Tipp für die ersten <span class="number">15</span> Minuten der Klausur</h2>
+        <p>Bevor du auch nur einen Satz des Materials liest, nimmst du einen roten Stift und unterstreichst exakt diesen Befehlssatz in der Aufgabenstellung.</p>
+        
+        <div class="box smart-box">
+            <p>Schreibe dir dann oben auf dein Schmierblatt in großen Buchstaben entweder das Wort <strong>"STRENG"</strong> (wenn du alle Kernaspekte brauchst) oder <strong>"FREI"</strong> (wenn es nur Anregungen sind).</p>
+        </div>
+
+        <div class="box fact-box">
+            <p>So verhinderst du, dass du in der Hektik des Schreibens vergisst, nach welchen Spielregeln du diese spezielle Aufgabe bearbeiten musst.</p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
