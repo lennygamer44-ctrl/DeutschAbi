@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Erzähltechniken um 1900</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        .highlight-red {
+            color: #c62828;
+            font-weight: bold;
+        }
+        
+        .highlight-green {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🧠 Hefteintrag <span class="number">49</span>: Pflichtthema <span class="number">2026</span> (Teil <span class="number">8</span>) – Literatur um <span class="number">1900</span>: Erzähltechniken und Psychoanalyse (Der Blick in den Kopf)</h1>
+
+    <div class="box fact-box">
+        <p>Wenn du im Abitur als Material einen literarischen Text aus der Zeit um <span class="number">1900</span> (z. B. von Arthur Schnitzler, Thomas Mann oder Franz Kafka) vorliegen hast, reicht es nicht, nur die Epoche oder die Motive (Hefteinträge <span class="number">28</span> und <span class="number">29</span>) zu benennen.</p>
+        <p>Um in der Inhaltsleistung (AFB <span class="number">II</span> und <span class="number">III</span>) die volle Punktzahl für dein <span class="smart-word">Eigenwissen</span> abzuräumen, musst du erkennen, <em>wie</em> dieser Text geschrieben ist. Um <span class="number">1900</span> revolutionierte sich nämlich die Art und Weise, wie Geschichten erzählt wurden, radikal.</p>
+    </div>
+
+    <section>
+        <h2>💀 <span class="number">1.</span> Der Tod des allwissenden Erzählers (Der Verlust der Kontrolle)</h2>
+        <div class="box fact-box">
+            <p><strong>Die alte Welt (<span class="number">19.</span> Jahrhundert):</strong> In der Klassik oder im bürgerlichen Realismus gab es meistens den <strong><span class="smart-word">auktorialen Erzähler</span></strong>. Dieser Erzähler stand wie ein allwissender Gott über der Geschichte. Er kannte die Vergangenheit, die Zukunft und die Gedanken aller Figuren. Er führte den Leser sicher an der Hand durch den Text.</p>
+        </div>
+
+        <div class="box def-box">
+            <p><strong>Der Umbruch um <span class="number">1900</span>:</strong> Wie du aus Hefteintrag <span class="number">27</span> weißt, zerbrach um <span class="number">1900</span> das feste Weltbild. Die Menschen waren orientierungslos, die Wissenschaft (Darwin, Einstein) stellte alles auf den Kopf.</p>
+            <p><strong>Die Folge für die Literatur:</strong> Ein allwissender, göttlicher Erzähler passte nicht mehr in diese chaotische Welt. Wenn niemand mehr die Wahrheit kennt, kann es auch kein Erzähler tun. Der auktoriale Erzähler stirbt (oder tritt massiv in den Hintergrund). An seine Stelle tritt der <strong><span class="smart-word">personale Erzähler</span></strong> oder der <strong><span class="smart-word">Ich-Erzähler</span></strong>, der nur noch die begrenzte, oft verwirrte Perspektive einer einzigen Figur einnimmt.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>So baust du es in den Aufsatz ein:</strong></p>
+            <p><em>„Die Orientierungslosigkeit der Epoche spiegelt sich auch formal im beiliegenden Textauszug (Material <span class="number">4</span>) wider. Durch den bewussten Verzicht auf einen allwissenden Erzähler und die Beschränkung auf eine rein personale Perspektive wird der Leser unmittelbar in die eingeschränkte und unsichere Wahrnehmungswelt der Hauptfigur hineingezogen.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🛋️ <span class="number">2.</span> Der Einfluss Sigmund Freuds (Die Literatur wird zur Couch)</h2>
+        <p>Sigmund Freud begründete um <span class="number">1900</span> die Psychoanalyse. Er bewies, dass unser Bewusstsein nur die Spitze des Eisbergs ist. Darunter brodelt das riesige, unkontrollierbare Unterbewusstsein (Triebe, Ängste, verdrängte Erinnerungen).</p>
+        
+        <div class="box def-box">
+            <p>Die Autoren dieser Zeit saugten diese Theorien förmlich auf. Sie interessierten sich nicht mehr dafür, was draußen in der Welt passierte, sondern nur noch dafür, was im Kopf ihrer Figuren (in deren Unterbewusstsein) vor sich ging. Man nennt dies die <strong><span class="smart-word">Psychologisierung der Literatur</span></strong>.</p>
+            <p>Um diese wilden, oft unlogischen Gedankenketten aufzuschreiben, mussten die Autoren völlig neue Erzähltechniken erfinden.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🌪️ <span class="number">3.</span> Der Innere Monolog und der Bewusstseinsstrom (Das Chaos im Kopf)</h2>
+        <p>Wenn du im Material einen Text siehst, der fast keine Satzzeichen hat, in dem die Figur ständig von einem Gedanken zum nächsten springt und Selbstgespräche führt, hast du den absoluten Jackpot gezogen! Du musst dann diese beiden Fachbegriffe anwenden:</p>
+        
+        <div class="box def-box">
+            <ul>
+                <li><strong>Der <span class="smart-word">Innere Monolog</span>:</strong> Die Figur führt ein stummes Selbstgespräch in der Ich-Form und im Präsens. Es ist, als würde man heimlich ein Diktiergerät an das Gehirn der Figur anschließen. (Ein berühmtes Beispiel aus dem Jahr <span class="number">1900</span> ist <em>„Leutnant Gustl“</em> von Arthur Schnitzler).</li>
+                <li><strong>Der <span class="smart-word">Bewusstseinsstrom</span> (Stream of Consciousness):</strong> Dies ist die noch radikalere Form des inneren Monologs. Hier gibt es keine logischen Sätze mehr. Gefühle, Wahrnehmungen von außen (z.B. ein lautes Geräusch auf der Straße) und Erinnerungen vermischen sich zu einem völlig unstrukturierten Wortbrei. Grammatik und Zeichensetzung werden oft komplett ignoriert.</li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>So baust du es in den Aufsatz ein:</strong></p>
+            <p><em>„Um das psychologische Chaos des modernen Individuums greifbar zu machen, bedient sich der Autor in Material <span class="number">5</span> der Technik des <span class="smart-word">inneren Monologs</span>. Ohne Filter oder logische Ordnung wird der ungeordnete <span class="smart-word">Bewusstseinsstrom</span> der Figur abgebildet, was die damals revolutionären Erkenntnisse der Psychoanalyse literarisch verarbeitet.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🥷 <span class="number">4.</span> Die Erlebte Rede (Der heimliche Gedankendieb)</h2>
+        <p>Dies ist das eleganteste, aber auch am schwersten zu erkennende Stilmittel dieser Zeit. Es ist ein Zwitterding zwischen dem Erzählerbericht und dem inneren Monolog.</p>
+        
+        <div class="box def-box">
+            <p><strong>Das Merkmal:</strong> Die Gedanken der Figur werden in der <span class="number">3.</span> Person (er/sie) und im Präteritum erzählt, aber sie klingen exakt so, als würde die Figur sie in diesem Moment selbst denken.</p>
+            <ul>
+                <li><span class="highlight-red">Beispiel normaler Erzähler:</span> Er fragte sich verzweifelt, ob er den Zug noch erreichen würde.</li>
+                <li><span class="highlight-green">Beispiel <span class="smart-word">Erlebte Rede</span>:</span> Würde er den Zug noch erreichen? Hoffentlich! Er musste sich beeilen, sonst war alles verloren! (Es steht in der <span class="number">3.</span> Person, aber die Emotion und die Ausrufezeichen gehören zur Figur, nicht zum Erzähler).</li>
+            </ul>
+        </div>
+
+        <div class="box fact-box">
+            <p><strong>Die Funktion:</strong> Der Leser rutscht unmerklich in den Kopf der Figur hinein, ohne dass es durch direkte Rede (<em>„...“, dachte er</em>) angekündigt wird. Es erzeugt eine extreme Nähe.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>So baust du es in den Aufsatz ein:</strong></p>
+            <p><em>„Auffällig ist zudem die Nutzung der <span class="smart-word">erlebten Rede</span>. Durch diese narrative Technik verschwimmt die Grenze zwischen dem Erzähler und der innere Gedankenwelt des Protagonisten, wodurch das Ausgeliefertsein der Figur noch intensiver auf den Leser wirkt.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🤥 <span class="number">5.</span> Der unzuverlässige Erzähler (Wem können wir noch glauben?)</h2>
+        <div class="box fact-box">
+            <p>Da die Welt um <span class="number">1900</span> als zersplittert wahrgenommen wurde (Identitätskrise), litten viele literarische Figuren unter Wahnvorstellungen, Fieberträumen oder waren schlichtweg wahnsinnig.</p>
+        </div>
+        
+        <div class="box def-box">
+            <p>Wenn eine solche Figur als Ich-Erzähler fungiert, haben wir es mit einem <strong><span class="smart-word">unzuverlässigen Erzähler</span></strong> zu tun.</p>
+            <p><strong>Dein Job im Aufsatz:</strong> Wenn du im Material merkst, dass die Hauptfigur Dinge sieht, die nicht da sein können, oder sich in extreme Paranoia hineinsteigert (oft im Expressionismus), musst du den Leser deines informierenden Textes darauf hinweisen, dass die im Text geschilderten Fakten nicht objektiv sind.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>So baust du es in den Aufsatz ein:</strong></p>
+            <p><em>„Bei der Auswertung des literarischen Materials muss zwingend berücksichtigt werden, dass es sich hierbei um einen <span class="smart-word">unzuverlässigen Erzähler</span> handelt. Die im Text beschriebene feindselige Umwelt ist keine objektive Realität, sondern das verzerrte Produkt einer paranoiden, durch die Isolation der Großstadt krank gewordenen Psyche.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🔧 <span class="number">6.</span> Der „Tuning-Satz“ für das Format <span class="number">III</span> (Die Synthese)</h2>
+        <div class="box fact-box">
+            <p><strong>Erinnere dich immer daran: Du informierst! Du analysierst nicht zum Selbstzweck.</strong> Wenn das Leitthema deines Aufsatzes (z.B. der Projektzeitung) die „Umbrüche um <span class="number">1900</span>“ lautet, nutzt du die Erzähltechnik des Materials als finalen Beweis für die Theorie der Sachtexte.</p>
+        </div>
+        
+        <div class="box smart-box">
+            <p><strong>Die Profi-Brücke:</strong></p>
+            <p><em>„Dass sich um die Jahrhundertwende nicht nur die Gesellschaft, sondern auch das Menschenbild radikal wandelte, lässt sich nicht nur aus historischen Quellen (Material <span class="number">2</span>), sondern auch direkt an der formalen Beschaffenheit der damaligen Literatur (Material <span class="number">4</span>) ablesen. Die Entdeckung des Unterbewusstseins durch Sigmund Freud zwang die Autoren förmlich dazu, neue Erzähltechniken wie den <span class="smart-word">Bewusstseinsstrom</span> zu entwickeln, um das zersplitterte Innere des modernen Menschen überhaupt noch in Worte fassen zu können.“</em></p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
