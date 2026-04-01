@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Sprachwandel vs. Sprachverfall</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        .highlight-red {
+            color: #c62828;
+            font-weight: bold;
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🗣️ Hefteintrag <span class="number">44</span>: Pflichtthema <span class="number">2026</span> (Teil <span class="number">5</span>) – Sprachwandel vs. Sprachverfall (Die ewige Debatte souverän darstellen)</h1>
+
+    <section>
+        <h2>🏆 <span class="number">1.</span> Warum dieses Thema ein absoluter Abitur-Klassiker ist</h2>
+        <div class="box fact-box">
+            <p>Neben der "politischen Sprache" (siehe Hefteintrag <span class="number">26</span>) gehört die allgemeine Reflexion über unsere Sprache zum absoluten Kernbereich des Deutsch-Abiturs. Das Kultusministerium liebt Materialien, die sich mit der Frage beschäftigen: <em>Geht unsere deutsche Sprache gerade kaputt?</em></p>
+        </div>
+        
+        <div class="box def-box">
+            <p><strong>Der Konflikt im Material:</strong> Du wirst in der Prüfungsklausur fast immer <span class="number">zwei</span> extrem gegensätzliche Materialien vorfinden. Material <span class="number">1</span> ist oft ein wütender Zeitungsartikel eines älteren Autors, der den Untergang des Deutschen beklagt. Material <span class="number">2</span> ist dann meist das Interview mit einem modernen Sprachwissenschaftler (Linguisten), der das alles völlig entspannt sieht.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p>Deine Aufgabe im Format <span class="number">III</span> ist es, diese beiden Fronten als neutraler Berichterstatter gegenüberzustellen. Dafür musst du die Fachbegriffe beider Seiten beherrschen.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>📉 <span class="number">2.</span> Fraktion <span class="number">1</span>: Die Sprachpessimisten (Die Theorie vom „Sprachverfall“)</h2>
+        <div class="box fact-box">
+            <p><strong>Wer sie sind:</strong> Oft Journalisten, Kulturkritiker, ältere Generationen oder Vereine (wie der "Verein Deutsche Sprache"). Man nennt sie auch <strong><span class="smart-word">Sprachpuristen</span></strong> (Purismus = das Streben nach absoluter Reinheit).</p>
+        </div>
+
+        <div class="box def-box">
+            <p><strong>Ihre Hauptargumente:</strong></p>
+            <ul>
+                <li>Sie sehen die Sprache als ein starres, perfektes Gebäude, das durch äußere Einflüsse beschädigt wird.</li>
+                <li>Sie kritisieren die massenhafte Übernahme englischer Wörter (<strong><span class="smart-word">Anglizismenflut</span></strong>), die das Deutsche angeblich verdrängen.</li>
+                <li>Sie warnen vor einer <strong><span class="smart-word">grammatikalischen Verarmung</span></strong> (z. B. der Verlust des Genitivs: <em>„wegen dem Wetter“</em> statt <em>„wegen des Wetters“</em>) und dem Siegeszug von fehlerhafter Jugend- oder Netzsprache (z. B. fehlende Satzzeichen, Abkürzungen).</li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Dein Satz-Tuning für den Aufsatz:</strong></p>
+            <p><em>„Wie in Material <span class="number">1</span> deutlich wird, vertritt der Autor die Position des Sprachpessimismus. Er warnt eindringlich vor einem drohenden <span class="smart-word">Sprachverfall</span>, den er primär auf den unreflektierten Gebrauch von Anglizismen und die grammatikalische Verarmung in der digitalen Kommunikation zurückführt.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>📈 <span class="number">3.</span> Fraktion <span class="number">2</span>: Die Sprachoptimisten (Die Theorie vom „Sprachwandel“)</h2>
+        <div class="box fact-box">
+            <p><strong>Wer sie sind:</strong> Fast alle modernen Sprachwissenschaftler (Linguisten). Sie betrachten Sprache völlig objektiv.</p>
+        </div>
+
+        <div class="box def-box">
+            <p><strong>Ihre Hauptargumente:</strong></p>
+            <ul>
+                <li>Sie sehen die Sprache nicht als starres Gebäude, sondern als einen lebendigen Organismus, der sich ständig an die Bedürfnisse der Gesellschaft anpassen muss. Stillstand bedeutet den Tod einer Sprache (wie bei Latein).</li>
+                <li>Neue Wörter (auch englische) sind für sie keine Bedrohung, sondern eine Wortschatzerweiterung und Bereicherung, da sie oft Sachverhalte beschreiben, für die es im Deutschen kein kurzes Wort gab (z. B. <em>„downloaden“</em> statt <em>„eine Datei aus dem Internet auf den lokalen Rechner herunterladen“</em>).</li>
+                <li>Sie erklären Phänomene wie die kurze Netzsprache mit dem Fachbegriff der <strong><span class="smart-word">Sprachökonomie</span></strong> (Der Mensch ist von Natur aus faul und versucht, mit möglichst wenig Aufwand maximal viele Informationen zu übermitteln).</li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Dein Satz-Tuning für den Aufsatz:</strong></p>
+            <p><em>„Demgegenüber argumentiert die Linguistin in Material <span class="number">2</span> aus der Perspektive des natürlichen <span class="smart-word">Sprachwandels</span>. Sie bewertet die Veränderungen nicht als Verfall, sondern als notwendige Anpassung eines lebendigen Systems, welches durch <span class="smart-word">Sprachökonomie</span> und den Import von Lehnwörtern kontinuierlich bereichert werde.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>💬 <span class="number">4.</span> Die Ebenen der Sprache (Varietäten statt Fehler)</h2>
+        <p>Wenn Sprachpuristen sich über Jugendliche aufregen (<em>„Die können gar kein richtiges Deutsch mehr!“</em>), kontern Linguisten mit dem Konzept der <strong><span class="smart-word">Sprachvarietäten</span></strong>.</p>
+        
+        <div class="box def-box">
+            <p><strong>Das Konzept:</strong> Niemand spricht <span class="number">24</span> Stunden am Tag fehlerfreies Hochdeutsch (<span class="smart-word">Standardsprache</span>). Wir alle wechseln am Tag mehrfach unsere "sprachliche Kleidung", je nachdem, mit wem wir reden.</p>
+            <ul>
+                <li>Auf dem Schulhof: <strong>Jugendsprache</strong> (Regiolekt/Soziolekt)</li>
+                <li>Zu Hause bei den Großeltern: <strong>Dialekt</strong></li>
+                <li>In der WhatsApp-Gruppe: <strong>Netzsprache</strong> (konzeptionelle Mündlichkeit)</li>
+                <li>Im Abituraufsatz: <strong>Bildungssprache</strong> / Standarddeutsch</li>
+            </ul>
+        </div>
+
+        <div class="box fact-box">
+            <p>Der Fehler liegt nicht im System, sondern im falschen Gebrauch: Ein Jugendlicher macht laut Linguisten die Sprache nicht kaputt, wenn er auf WhatsApp Abkürzungen nutzt. Ein Problem (mangelnde Sprachkompetenz) entsteht erst dann, wenn er nicht mehr in der Lage ist, dieses WhatsApp-Deutsch im Bewerbungsgespräch gegen das Standarddeutsch einzutauschen (man nennt diesen Wechsel <strong><span class="smart-word">Code-Switching</span></strong>).</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Dein <span class="smart-word">Eigenwissen</span>-Joker für den Schlussteil:</strong></p>
+            <p><em>„Die Auswertung der Expertenmeinungen zeigt, dass nicht der Untergang des Standarddeutschen droht, sondern vielmehr die Herausforderung darin besteht, den Jugendlichen ein situativ angemessenes <span class="smart-word">Code-Switching</span> zwischen den verschiedenen Sprachvarietäten zu vermitteln.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🇬🇧 <span class="number">5.</span> Der Anglizismus: Lehnwort oder Imponiergehabe?</h2>
+        <p>Da Anglizismen oft der Kern des Streits im Material sind, musst du im Aufsatz präzise zwischen <span class="number">zwei</span> Arten von englischen Wörtern unterscheiden können:</p>
+        
+        <div class="box def-box">
+            <ul>
+                <li><strong>Das notwendige <span class="smart-word">Lehnwort</span>:</strong> Wörter wie <em>Computer, Internet, Airbag, Manager</em>. Sie füllen eine echte Lücke im deutschen Wortschatz. Sie sind etabliert und nützlich.</li>
+                <li><strong>Das <span class="smart-word">Imponierwort</span> (Status-Wort):</strong> Wörter, für die es bereits ein perfektes deutsches Wort gibt, die aber genutzt werden, um modern oder international zu klingen (z. B. <em>„Sale“</em> statt Schlussverkauf, <em>„Facility Manager“</em> statt Hausmeister, <em>„Meeting“</em> statt Besprechung). Hier setzen die Sprachkritiker an, da sie diese Wörter als hohle Phrasen empfinden, die den Empfänger (z. B. ältere Menschen) von der Kommunikation ausschließen.</li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>So informierst du darüber:</strong></p>
+            <p><em>„Darüber hinaus differenziert Material <span class="number">3</span> deutlich zwischen etablierten <span class="smart-word">Lehnwörtern</span>, die eine sachliche Notwendigkeit erfüllen, und reinen <span class="smart-word">Imponier-Anglizismen</span>, welche laut dem Autor primär der elitären Abgrenzung dienten und somit den gesellschaftlichen Diskurs erschwerten.“</em></p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
