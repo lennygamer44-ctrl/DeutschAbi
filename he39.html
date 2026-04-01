@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Satzbau-Tuning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        .highlight-red {
+            color: #c62828;
+            font-weight: bold;
+        }
+        
+        .highlight-green {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🏗️ Hefteintrag <span class="number">39</span>: Satzbau-Tuning – Wie du mit syntaktischer Varianz die Darstellungsleistung maximierst</h1>
+
+    <section>
+        <h2>🎵 <span class="number">1.</span> Warum der Satzbau (die <span class="smart-word">Syntax</span>) deine Note heimlich steuert</h2>
+        <div class="box fact-box">
+            <p>Die Korrektoren lesen im Abitur Dutzende von Klausuren. Wenn ein Text über <span class="number">fünf</span> Seiten hinweg immer die exakt gleiche Satzmelodie hat, ermüdet das den Leser extrem. Das Gehirn des Prüfers schaltet auf Durchzug, was unweigerlich zu Punktabzügen in der Darstellungsleistung führt.</p>
+        </div>
+        
+        <div class="box def-box">
+            <p>Das Kultusministerium fordert in der Bewertungsmatrix ausdrücklich eine <strong>„<span class="smart-word">syntaktische Varianz</span>“</strong>. Das bedeutet: Du musst beweisen, dass du deinen Satzbau flexibel, bewusst und abwechslungsreich steuern kannst.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Der tödlichste Anfängerfehler (Der „Holzfäller-Stil“):</strong> Jeder Satz beginnt mit dem Subjekt, gefolgt vom Prädikat und dem Objekt. <em>(„Die Digitalisierung ist ein Problem. Der Autor beschreibt diese Entwicklung. Die Schüler nutzen oft Smartphones.“)</em> Das liest sich monoton und kindlich.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>⚖️ <span class="number">2.</span> Parataxe vs. Hypotaxe – Die Mischung macht das Meisterwerk</h2>
+        <p>Du musst die <span class="number">zwei</span> grundlegenden Bauarten von Sätzen beherrschen und sie gezielt nach deiner Textsorte ausrichten:</p>
+        
+        <div class="box def-box">
+            <p><strong>Die <span class="smart-word">Parataxe</span> (Der Hauptsatz-Stil):</strong> Kurze, prägnante Sätze (oft nur Hauptsätze, die aneinandergereiht werden).</p>
+            <ul>
+                <li><strong>Wann nutzt du sie?</strong> Zwingend bei Reden und Vorträgen! Wenn du sprichst, machst du keine ewigen Bandwurmsätze, sonst geht dir (und dem Publikum) die Puste aus. Parataxen wirken dynamisch, klar und wecken den Leser auf. Nutze sie auch, um am Ende eines Absatzes ein starkes, knackiges Zwischenfazit zu ziehen. <em>(„Das Fazit ist eindeutig: Die Handschrift darf nicht sterben.“)</em></li>
+            </ul>
+        </div>
+
+        <div class="box def-box">
+            <p><strong>Die <span class="smart-word">Hypotaxe</span> (Der Schachtelsatz / Das Haupt-Nebensatz-Gefüge):</strong> Komplexe Sätze, bei denen ein Hauptsatz von mehreren Nebensätzen begleitet wird.</p>
+            <ul>
+                <li><strong>Wann nutzt du sie?</strong> Bei Lexikonartikeln, Broschüren oder wenn du komplexe Zusammenhänge aus dem Material (z. B. Ursache und Wirkung) detailliert und präzise erklären musst.</li>
+            </ul>
+        </div>
+
+        <div class="box fact-box">
+            <p><strong>Die eiserne Regel für die Prüfung:</strong> Ein Satz darf auf deinem Klausurbogen <strong>niemals länger als <span class="number">drei</span> bis maximal <span class="number">vier</span> Zeilen</strong> sein. Sobald ein Satz länger wird, verlierst du zu <span class="number">90</span> % die grammatikalische Kontrolle (Bezüge stimmen nicht mehr, Kommas fehlen) und produzierst Fehler.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🛡️ <span class="number">3.</span> Das Passiv – Deine Geheimwaffe für absolute Objektivität</h2>
+        <p>Wie in Hefteintrag <span class="number">30</span> gelernt, musst du beim materialgestützten Informieren streng objektiv bleiben und das Wörtchen „Ich“ komplett aus deinem Text verbannen.</p>
+        
+        <div class="box smart-box">
+            <p>Das eleganteste grammatikalische Werkzeug, um den Handelnden (das Ich oder das Man) unsichtbar zu machen, ist das <strong><span class="smart-word">Passiv</span></strong>. Es lenkt den Fokus weg von der Person und hin zur eigentlichen Sache.</p>
+        </div>
+
+        <div class="box def-box">
+            <ul>
+                <li><span class="highlight-red">Statt (Aktiv / Unprofessionell):</span> <em>„Man sieht in Material <span class="number">2</span> ganz deutlich, dass die Leute weniger lesen.“</em> oder <em>„Ich möchte nun zeigen, dass...“</em></li>
+                <li><span class="highlight-green">Besser (Passiv / Professionell):</span> <em>„Anhand von Material <span class="number">2</span> wird deutlich gezeigt, dass die Lesebereitschaft sinkt.“</em> oder <em>„Im Folgenden soll dargelegt werden, inwiefern...“</em></li>
+            </ul>
+        </div>
+
+        <div class="box fact-box">
+            <p><strong>Achtung:</strong> Genau wie beim Nominalstil (Hefteintrag <span class="number">34</span>) gilt auch hier: Übertreibe es nicht. Ein Text, der nur aus Passivkonstruktionen besteht, wirkt unpersönlich, behördlich und extrem schwerfällig. Setze es gezielt als Stilmittel der Distanzierung ein.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🎓 <span class="number">4.</span> Partizipialkonstruktionen – Der absolute Profi-Hack</h2>
+        <p>Um deine Sprache sofort erwachsener und akademischer klingen zu lassen, kannst du Nebensätze durch sogenannte <strong><span class="smart-word">Partizipialkonstruktionen</span></strong> ersetzen. Sie komprimieren Informationen und machen deinen Text kompakter. Das zeigt dem Korrektor höchste sprachliche Reife.</p>
+        
+        <div class="box smart-box">
+            <p><strong>Wie es funktioniert:</strong> Du nutzt das <strong>Partizip Präsens</strong> (Verb + d, z. B. <em>weinend, lachend, zunehmend</em>) oder das <strong>Partizip Perfekt</strong> (z. B. <em>bedingt, verursacht, gestützt</em>), um Nebensätze einzusparen.</p>
+        </div>
+
+        <div class="box def-box">
+            <p><strong>Beispiel <span class="number">1</span> (Kausal/Begründung):</strong></p>
+            <ul>
+                <li><span class="highlight-red">Standard-Nebensatz:</span> <em>„Weil die Digitalisierung immer weiter zunimmt, verändern sich die Lesegewohnheiten.“</em></li>
+                <li><span class="highlight-green">Profi-Tuning:</span> <em>„Bedingt durch die zunehmende Digitalisierung verändern sich die Lesegewohnheiten.“</em></li>
+            </ul>
+            <br>
+            <p><strong>Beispiel <span class="number">2</span> (Modal/Art und Weise):</strong></p>
+            <ul>
+                <li><span class="highlight-red">Standard-Nebensatz:</span> <em>„Die Experten warnen vor den Folgen, indem sie sich auf eine aktuelle Studie stützen.“</em></li>
+                <li><span class="highlight-green">Profi-Tuning:</span> <em>„Gestützt auf eine aktuelle Studie warnen die Experten vor den Folgen.“</em></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🔄 <span class="number">5.</span> Der Inversions-Trick (Den Satzanfang variieren)</h2>
+        <div class="box fact-box">
+            <p>Wenn du beim Korrekturlesen (Phase <span class="number">4</span>) merkst, dass du doch wieder viermal hintereinander mit dem Subjekt angefangen hast (<em>„Die Studie zeigt...“, „Der Autor meint...“, „Das Problem ist...“</em>), wendest du den <strong><span class="smart-word">Inversions-Trick</span></strong> an.</p>
+        </div>
+        
+        <div class="box smart-box">
+            <p><strong>Die Technik:</strong> Du nimmst einfach eine Information aus der Mitte oder dem Ende des Satzes (meistens eine Zeitangabe, eine Ortsangabe oder ein Adverb) und <strong>ziehst sie auf die allererste Position vor dem Verb</strong>. Das Subjekt rutscht dann automatisch hinter das Verb.</p>
+        </div>
+
+        <div class="box def-box">
+            <ul>
+                <li><span class="highlight-red">Ausgangssatz:</span> <em>„Die Identitätskrise [Subjekt] war um <span class="number">1900</span> [Zeit] ein zentrales Thema in der Literatur [Ort].“</em></li>
+                <li><span class="highlight-green">Tuning (Zeit vorziehen):</span> <em>„Um <span class="number">1900</span> war die Identitätskrise ein zentrales Thema in der Literatur.“</em></li>
+                <li><span class="highlight-green">Tuning (Ort vorziehen):</span> <em>„In der Literatur der Jahrhundertwende war die Identitätskrise ein zentrales Thema.“</em></li>
+            </ul>
+        </div>
+
+        <p>Mit diesem simplen Handgriff rettest du deine Satzrhythmik, ohne den inhaltlichen Sinn auch nur um ein Prozent zu verändern.</p>
+    </section>
+
+</div>
+
+</body>
+</html>
