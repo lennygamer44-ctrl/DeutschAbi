@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Die goldenen Regeln des Zitierens</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>✍️ Hefteintrag <span class="number">23</span>: Die goldenen Regeln des Zitierens – Voraussetzungen für eine gelungene Einbindung</h1>
+
+    <section>
+        <h2>❗️ <span class="number">1.</span> Warum du beim Informieren überhaupt zitieren musst</h2>
+        <div class="box fact-box">
+            <p>Beim materialgestützten Informieren (Format <span class="number">III</span>) bist du nicht der Erfinder der Fakten, sondern der Übermittler. Du bastelst aus fremdem Wissen einen neuen Text.</p>
+        </div>
+        
+        <div class="box smart-box">
+            <p>Durch das Zitieren beweist du dem Korrektor <span class="number">zwei</span> Dinge: Erstens, dass du die Materialien wirklich ausgewertet hast. Zweitens, dass du objektiv bleibst, weil du dich auf Experten oder Studien stützt und nicht auf deine eigene Meinung.</p>
+        </div>
+
+        <div class="box def-box">
+            <p><strong>Achtung:</strong> Tust du das nicht und verkaufst fremde Gedanken heimlich als deine eigenen, gilt das als <strong><span class="smart-word">Plagiat</span></strong> (geistiger Diebstahl) und kostet massiv Punkte.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🚫 <span class="number">2.</span> Der schlimmste Anfängerfehler: Zitate "fallen lassen"</h2>
+        <div class="box fact-box">
+            <p>Ein absoluter Notenkiller ist das sogenannte <strong>"<span class="smart-word">Zitat-Drop</span>"</strong>. Das passiert, wenn Schüler einen Satz aus dem Material einfach wörtlich abschreiben und isoliert in ihren Text klatschen, ohne ihn mit dem vorherigen Satz zu verbinden.</p>
+        </div>
+        
+        <div class="box def-box">
+            <ul>
+                <li><strong>Falsch:</strong> Die Handschrift verliert an Bedeutung. <em>"Immer weniger Kinder können heute noch flüssig mit dem Füller schreiben."</em></li>
+                <li><strong>Richtig:</strong> Du musst fremdes Wissen elegant in deinen Text einbetten. Dein Text muss sich flüssig lesen lassen. <strong>Beispiel:</strong> Dass die Handschrift an Bedeutung verliert, bestätigt auch der Forscher Max Müller, indem er warnt: <em>"Immer weniger Kinder können heute noch flüssig mit dem Füller schreiben."</em></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🔧 <span class="number">3.</span> Dein Wortschatz-Tuning: Die richtigen Verben nutzen</h2>
+        <p>Wenn du dich auf ein Material beziehst, benutze nicht zehnmal hintereinander die Wörter „sagt“ oder „schreibt“. Das wirkt sprachlich extrem schwach.</p>
+        
+        <div class="box smart-box">
+            <p>Zeige dem Korrektor, dass du verstanden hast, wie der Autor im Material argumentiert. Nutze dafür diese <strong>Profi-Verben</strong>:</p>
+            <ul>
+                <li><strong>betont / hebt hervor:</strong> Wenn dem Experten im Text etwas besonders wichtig ist.</li>
+                <li><strong>kritisiert / bemängelt:</strong> Wenn das Material eine negative Entwicklung beschreibt.</li>
+                <li><strong>warnt davor / gibt zu bedenken:</strong> Wenn es um Risiken geht (z. B. bei Social Media).</li>
+                <li><strong>belegt / verdeutlicht / weist nach:</strong> Wenn das Material eine Statistik oder eine Studie ist.</li>
+                <li><strong>stellt die These auf:</strong> Wenn es sich nur um eine Meinung eines Autors handelt, die noch nicht bewiesen ist.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>⚔️ <span class="number">4.</span> Die Wahl der Waffen: Direkt vs. Indirekt</h2>
+        <p>Du hast beim materialgestützten Informieren grundsätzlich <span class="number">zwei</span> Möglichkeiten, das Material in deinen Aufsatz einzubauen. Die Mischung aus beidem macht einen perfekten Text aus:</p>
+        
+        <div class="box def-box">
+            <p><strong><span class="smart-word">Indirektes Zitieren</span> (Paraphrasieren):</strong> Du liest den Satz im Material, legst den Zettel zur Seite und schreibst den Sinn in deinen eigenen Worten auf. Das ist der absolute Standard für dieses Format, weil es deinen eigenen Schreibfluss nicht stört.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong><span class="smart-word">Direktes Zitieren</span>:</strong> Du schreibst <span class="number">ein</span> bis <span class="number">zwei</span> extrem wichtige oder besonders gut formulierte Wörter (oder einen ganz kurzen Satz) exakt ab und setzt sie in „Gänsefüßchen“.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>✅ <span class="number">5.</span> Die goldene Checkliste vor jedem Zitat</h2>
+        <p>Bevor du eine Information aus den Materialien in deinen Text übernimmst, frage dich kurz:</p>
+        
+        <div class="box fact-box">
+            <ul>
+                <li>Habe ich klar gemacht, wer das sagt? (z. B. <em>"Die Sprachwissenschaftlerin..."</em>)</li>
+                <li>Habe ich klar gemacht, woher die Info kommt? (z. B. <em>"In einem Artikel der Süddeutschen Zeitung..."</em>)</li>
+                <li>Ist die Zeilenangabe laut "redaktionellen Vorgaben" erlaubt oder verboten? (<strong>Zur Erinnerung:</strong> Bei Vorträgen, Zeitungsartikeln und Broschüren lässt du Zeilennummern meistens komplett weg!)</li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
