@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Der Beitrag für eine Projektzeitung</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📰 Hefteintrag <span class="number">19</span>: Textsorte im Detail: Der Beitrag für eine Projektzeitung (Der Spagat zwischen Schülern, Eltern und Lehrern)</h1>
+
+    <section>
+        <h2>🏫 <span class="number">1.</span> Das Prüfungsszenario: Deine Rolle als Schul-Journalist</h2>
+        <div class="box fact-box">
+            <p>Die Abituraufgabe simuliert hier oft ein schulinternes Großereignis. Das Szenario lautet zum Beispiel: <em>„Ihre Schule veranstaltet eine Projektwoche zum Thema Literatur im digitalen Zeitalter. Für die offizielle <span class="smart-word">Projektzeitung</span>, die am Ende der Woche erscheint, verfassen Sie einen informativen Beitrag.“</em></p>
+        </div>
+        <div class="box smart-box">
+            <p><strong>Deine Aufgabe:</strong> Du bist nicht einfach nur ein Schüler, der einen Aufsatz abgibt. Du bist der Fach-Autor für diese Zeitung. Dein Text soll in das Thema einführen, Hintergründe aus den Materialien beleuchten und dein Fachwissen aus dem Deutschunterricht präsentieren.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🤸‍♂️ <span class="number">2.</span> Der Adressaten-Spagat: Die schwierigste Zielgruppe</h2>
+        <div class="box def-box">
+            <p><strong>Dein Publikum:</strong> Eine Projektzeitung wird von einer extrem gemischten Zielgruppe gelesen. Deine <span class="smart-word">Adressaten</span> sind Mitschüler (die vielleicht keine Lust auf hochgestochene Texte haben), Eltern (die seriös informiert werden wollen) und Lehrkräfte (die prüfen, ob der Text fachlich korrekt ist).</p>
+        </div>
+
+        <div class="box fact-box">
+            <p><strong>Das Sprachniveau (Der Spagat):</strong> Das ist die eigentliche Schwierigkeit dieser Textsorte.</p>
+            <ul>
+                <li>Du darfst nicht schreiben wie in der WhatsApp-Gruppe deiner Klasse (zu locker).</li>
+                <li>Du darfst aber auch nicht schreiben wie in einer Doktorarbeit (zu schwer für jüngere Schüler oder fachfremde Eltern).</li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Die Lösung:</strong> Wähle eine gehobene, gut verständliche Alltagssprache. Wenn du literaturgeschichtliche Fachbegriffe (z. B. <em>"<span class="smart-word">Expressionismus</span>"</em> oder <em>"<span class="smart-word">Framing</span>"</em>) aus deinem Eigenwissen verwendest, musst du diese in einem Halbsatz kurz und knackig erklären.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🏗️ <span class="number">3.</span> Der Aufbau eines Projektzeitungs-Artikels</h2>
+        <p>Ein guter Artikel für eine Zeitung muss die Leser sofort fesseln, sonst blättern sie weiter. So baust du ihn strukturiert auf:</p>
+        
+        <div class="box def-box">
+            <ul>
+                <li><strong>Die <span class="smart-word">Headline</span> (Die Überschrift):</strong> Eine Zeitung braucht einen Titel, der Neugier weckt. Entweder gibt die Aufgabe ihn vor, oder du erfindest einen. <em>Beispiel: „Buch gegen Bildschirm: Wer gewinnt den Kampf um unsere Freizeit?“</em></li>
+                <li><strong>Der <span class="smart-word">Lead-Absatz</span> (Der Teaser):</strong> Du beginnst mit einem sogenannten „Lead“. Das ist ein kurzer, fetter Einleitungsabsatz. Du stellst eine provokante Frage oder schilderst eine Alltagssituation aus der Schule, um alle <span class="number">drei</span> Zielgruppen (Schüler, Eltern, Lehrer) sofort abzuholen.</li>
+                <li><strong>Der Hauptteil:</strong> Hier wendest du den bekannten <span class="smart-word">„Burger-Trick“</span> an. Du gliederst deine Informationen aus den beigefügten Materialien in logische Absätze (z. B. Vorteile, Nachteile, historische Vergleiche) und reicherst sie mit deinem Unterrichtswissen an. <span class="smart-word">Zwischenüberschriften</span> sind hier ein hervorragendes Mittel, um den Text wie einen echten Zeitungsartikel aussehen zu lassen.</li>
+                <li><strong>Der Schluss (Das Fazit):</strong> Du endest mit einer abrundenden Zusammenfassung. Da es eine Projektzeitung ist, passt hier ein positiver Ausblick auf die Ergebnisse der Projektwoche oder ein versöhnliches Schlusswort an die Schulfamilie.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🖋️ <span class="number">4.</span> Der Umgang mit Material und Zitaten (Journalistischer Stil)</h2>
+        <div class="box fact-box">
+            <p>Das Kultusministerium stuft diesen Text als <strong>„<span class="smart-word">journalistische Variante</span>“</strong> ein.</p>
+            <p><strong>Die wichtigste redaktionelle Vorgabe:</strong> Genau wie beim Vortrag oder Programmheft gilt hier in der Regel: <strong>Keine Zeilennummern!</strong></p>
+            <p>Du zwingst den Text in einen flüssigen Zeitungsstil. Du zitierst indirekt und nennst dabei die Experten oder Quellen beim Namen.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Beispiele für geschickte Formulierungen:</strong></p>
+            <ul>
+                <li><em>„Ein Blick auf die aktuelle Umfrage des Instituts XY belegt eindrucksvoll...“</em></li>
+                <li><em>„Wie der Sprachforscher Max Müller in seinem jüngsten Beitrag aufzeigt...“</em></li>
+                <li><em>„Experten warnen davor, dass...“</em> (Wenn du die Info aus einem Material hast, dessen Autor nicht so wichtig ist, sondern nur der Fakt).</li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
