@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Die Sachtextarten im Dossier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        .highlight-red {
+            color: #c62828;
+            font-weight: bold;
+        }
+        
+        .highlight-green {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🕵️‍♂️ Hefteintrag <span class="number">52</span>: Die Sachtextarten im Dossier – Wie du die versteckte Agenda des Autors entlarvst</h1>
+
+    <section>
+        <h2>🎭 <span class="number">1.</span> Die Illusion der Objektivität (Warum du den Texttyp kennen musst)</h2>
+        <div class="box fact-box">
+            <p>Wenn du dein Abitur-Dossier (Format <span class="number">III</span>) aufschlägst, findest du dort nicht einfach nur "Texte". Das Kultusministerium wählt ganz gezielt unterschiedliche journalistische und literarische Textsorten aus.</p>
+            <p><span class="highlight-red">Die Gefahr:</span> Viele Schüler behandeln jeden Text im Material so, als wäre es ein absolut neutraler Lexikonartikel oder ein reiner Faktenbericht (die sogenannte Nachricht). Sie schreiben Sätze wie: <em>„Material <span class="number">2</span> informiert darüber, dass...“</em></p>
+        </div>
+        
+        <div class="box smart-box">
+            <p><strong>Die Realität:</strong> Fast kein Text im Abitur ist völlig neutral! Journalisten nutzen verschiedene Formate (Genres), um ihre eigene Agenda zu pushen, den Leser zu manipulieren oder ihn zum Lachen zu bringen.</p>
+            <p>Wenn du die Textsorte im Material erkennst und in deinem Aufsatz beim Namen nennst, zeigst du dem Korrektor höchste Textkompetenz (<strong><span class="smart-word">AFB III</span></strong>) und verhinderst, dass du aus Versehen die Meinung eines Autors als objektiven Fakt verkaufst.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🎯 <span class="number">2.</span> Der Kommentar (Der meinungsstarke Scharfschütze)</h2>
+        <div class="box def-box">
+            <ul>
+                <li><strong>Das Merkmal:</strong> Der Kommentar ist die klassische meinungsbildende Textsorte im Journalismus. Hier nimmt ein Autor ganz klar Stellung zu einem aktuellen Thema (z. B. <em>"Warum das Smartphone aus dem Klassenzimmer fliegen muss"</em>). Er will den Leser von seiner Sichtweise überzeugen.</li>
+                <li><strong>Die Sprache:</strong> Stark wertend, appellativ (Bühler-Modell!), oft polarisierend. Der Autor nutzt rhetorische Mittel (siehe Hefteintrag <span class="number">43</span>), um seine Gegner abzuwerten.</li>
+            </ul>
+        </div>
+
+        <div class="box fact-box">
+            <p><strong>Deine Aufgabe im Format <span class="number">III</span>:</strong> Du darfst den Kommentar niemals als "Bericht" bezeichnen! Du musst ihn als das entlarven, was er ist: Ein <strong>subjektiver Meinungsbeitrag</strong>.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Dein Satz-Tuning:</strong></p>
+            <p><em>„Dass die Debatte um die Digitalisierung keineswegs neutral geführt wird, zeigt der pointierte <span class="smart-word">Kommentar</span> des Journalisten in Material <span class="number">2</span>. Anstatt die Faktenlage ausgewogen darzustellen, bezieht der Autor hier eindeutig Stellung und versucht, die Leserschaft durch eine stark wertende Sprache von seiner restriktiven medienpädagogischen Linie zu überzeugen.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🤡 <span class="number">3.</span> Die Glosse (Die satirische Falle)</h2>
+        <div class="box def-box">
+            <p><strong>Das Merkmal:</strong> Die <span class="smart-word">Glosse</span> ist der kleine, bissige Bruder des Kommentars. Sie ist kurz, pointiert und lebt fast ausschließlich von Ironie, Sarkasmus und extremer Übertreibung (Hyperbel). Sie knöpft sich oft ein absurdes Detail eines großen Themas vor und macht es lächerlich.</p>
+        </div>
+
+        <div class="box fact-box">
+            <p><span class="highlight-red">Die absolute Abitur-Falle:</span> Wenn du die Ironie einer Glosse nicht erkennst und den Text wörtlich nimmst, hast du das Thema komplett verfehlt. (Erinnerung an Hefteintrag <span class="number">43</span>: Wenn der Autor schreibt <em>"Es ist wunderbar, dass unsere Kinder nur noch aus drei Buchstaben bestehende Wörter grunzen"</em>, dann meint er das Gegenteil!).</p>
+            <p><strong>Deine Aufgabe im Format <span class="number">III</span>:</strong> Du musst den "satirischen Schleier" wegziehen und den wahren Kern der Kritik für deine Leser (z. B. in deiner Schulbroschüre) sachlich übersetzen.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Dein Satz-Tuning:</strong></p>
+            <p><em>„Die emotionale Aufladung dieses Themas spiegelt sich auch in der beiliegenden <span class="smart-word">Glosse</span> (Material <span class="number">3</span>) wider. Durch den konsequenten Einsatz von beißendem Sarkasmus und grotesken Übertreibungen demaskiert die Autorin die Reformpläne als völlig realitätsfern, ohne diese Kritik jedoch direkt aussprechen zu müssen.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>💭 <span class="number">4.</span> Der Essay (Der intellektuelle Spaziergang)</h2>
+        <div class="box def-box">
+            <ul>
+                <li><strong>Das Merkmal:</strong> Wenn Material <span class="number">1</span> extrem lang ist, viele Fremdwörter enthält und philosophisch über Gott und die Welt nachdenkt, hast du meist einen <span class="smart-word">Essay</span> vor dir. Der Essay (vom französischen <em>essayer</em> = versuchen) liefert keine harten Fakten und keine finale Lösung. Er ist ein intellektueller "Gedankenspaziergang", bei dem der Autor ein Problem (z. B. den Sprachwandel) von allen Seiten assoziativ umkreist.</li>
+                <li><strong>Die Sprache:</strong> Sehr hochsprachlich, oft elitär, durchsetzt mit rhetorischen Fragen und literarischen Anspielungen.</li>
+            </ul>
+        </div>
+
+        <div class="box fact-box">
+            <p><strong>Deine Aufgabe im Format <span class="number">III</span>:</strong> Lass dich von dem philosophischen Geschwafel nicht ablenken! Nutze deinen Scanner-Blick (Hefteintrag <span class="number">21</span>), um den Kern des Essays herauszufiltern. Du fasst die komplexen Gedankengänge des Essayisten in einfaches, klares Deutsch zusammen.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Dein Satz-Tuning:</strong></p>
+            <p><em>„In seinem philosophisch angelegten <span class="smart-word">Essay</span> (Material <span class="number">1</span>) nähert sich der Sprachwissenschaftler dem Phänomen nicht über harte empirische Daten, sondern wählt einen assoziativen Ansatz. Er umkreist die Problematik der Identitätskrise, indem er...“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🎥 <span class="number">5.</span> Die Reportage (Der emotionale Zoom-In)</h2>
+        <div class="box def-box">
+            <ul>
+                <li><strong>Das Merkmal:</strong> Die <span class="smart-word">Reportage</span> ist ein Zwitterding. Sie ist eigentlich informativ (wie ein Bericht), nutzt aber die Stilmittel eines Romans, um Spannung zu erzeugen. Der Reporter war vor Ort und schildert seine persönlichen Sinneseindrücke (Gerüche, Geräusche).</li>
+                <li><strong>Der Aufbau:</strong> Sie beginnt fast immer mit einem szenischen Einstieg (dem "Zoom-In" auf ein Einzelschicksal, z. B. <em>„Der 14-jährige Max starrt mit leeren Augen auf den flimmernden Bildschirm...“</em>) und wechselt dann auf die übergeordnete Faktenebene (den "Zoom-Out", z. B. <em>„Max ist einer von drei Millionen Jugendlichen, die...“</em>).</li>
+            </ul>
+        </div>
+
+        <div class="box fact-box">
+            <p><strong>Deine Aufgabe im Format <span class="number">III</span>:</strong> Du musst erkennen, dass das Einzelschicksal am Anfang nur ein emotionaler Köder ist. Du wertest für deinen Aufsatz primär die Faktenebene (Zoom-Out) aus, kannst das Einzelschicksal aber perfekt als "Aufhänger" für deine eigene Einleitung klauen!</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Dein Satz-Tuning:</strong></p>
+            <p><em>„Um die abstrakten Statistiken greifbar zu machen, wählt die vorliegende <span class="smart-word">Reportage</span> (Material <span class="number">4</span>) den Weg über ein konkretes Einzelschicksal. Diese erzählerische Technik der Personifizierung illustriert eindrücklich die verheerenden sozialen Folgen, welche die zuvor genannten nackten Zahlen des Bundesamtes (Material <span class="number">2</span>) lediglich andeuten konnten.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🎙️ <span class="number">6.</span> Das Interview (Das gelenkte Gespräch)</h2>
+        <div class="box def-box">
+            <p><strong>Das Merkmal:</strong> Oft liegt ein abgedrucktes <span class="smart-word">Interview</span> mit einem Experten (z. B. einem Linguisten oder Soziologen) bei. Hier gibt es zwei Personen: Den Interviewer (der die Fragen stellt) und den Experten (der antwortet).</p>
+        </div>
+
+        <div class="box fact-box">
+            <p><span class="highlight-red">Die Falle:</span> Viele Schüler zitieren aus Versehen den Journalisten, der die Frage stellt, und geben das als "Meinung des Experten" aus. Zudem sind die Fragen des Journalisten oft bewusst provokant formuliert, um den Experten aus der Reserve zu locken (Lenkungsabsicht).</p>
+            <p><strong>Deine Aufgabe im Format <span class="number">III</span>:</strong> Achte genau darauf, wer was sagt. Extrahiere die wissenschaftlichen Thesen des Experten und erwähne, dass es sich um eine Dialogsituation handelt.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Dein Satz-Tuning:</strong></p>
+            <p><em>„Die im Raum stehenden Vorwürfe der Sprachpessimisten werden von dem befragten Linguisten im vorliegenden <span class="smart-word">Interview</span> (Material <span class="number">5</span>) entschieden zurückgewiesen. Auf die provokante Nachfrage des Journalisten bezüglich des drohenden Sprachverfalls stellt der Experte unmissverständlich klar, dass...“</em></p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
