@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Die Textsorten-Illusion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        .highlight-red {
+            color: #c62828;
+            font-weight: bold;
+        }
+        
+        .highlight-green {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📰 Hefteintrag <span class="number">47</span>: Die Textsorten-Illusion – Wie du den journalistischen Tonfall (Zeitungsartikel & Blog) perfekt triffst</h1>
+
+    <section>
+        <h2>⚠️ <span class="number">1.</span> Warum „einfach nur informieren“ oft an der Realität scheitert</h2>
+        <div class="box fact-box">
+            <p>Du sitzt im Abitur, hast Format <span class="number">III</span> gewählt und liest den alles entscheidenden <span class="smart-word">Dach-Operator</span>: <em>„Verfassen Sie auf Grundlage der Materialien einen informierenden Artikel für den Blog Ihrer Schul-Homepage.“</em></p>
+            <p><span class="highlight-red">Der fatale Reflex:</span> Die meisten Schüler fangen nun an, einen klassischen Schulaufsatz (Einleitung, Hauptteil, Schluss) herunterzuschreiben. Sie ignorieren völlig, dass ein Blogbeitrag oder ein Zeitungsartikel in der echten Welt nach ganz anderen dramaturgischen Regeln funktioniert als eine Klausur.</p>
+        </div>
+        
+        <div class="box smart-box">
+            <p>Wenn du die Illusion aufrechterhältst, dass dein Blatt Papier eigentlich eine Website oder eine gedruckte Zeitung ist, sammelst du in der Darstellungsleistung (Kriterium: <strong>Textsortenmerkmale und Adressatenbezug</strong>) die absoluten Höchstpunkte.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🔻 <span class="number">2.</span> Das Prinzip der umgekehrten Pyramide (Das Wichtigste zuerst!)</h2>
+        <div class="box def-box">
+            <p>Wenn du eine Erörterung oder einen Spannungsaufsatz schreibst, hebst du dir dein bestes Argument oder die Auflösung für den Schluss auf. <strong>Im Journalismus ist das streng verboten!</strong></p>
+            <p>Leser im Internet oder in der Zeitung sind ungeduldig. Wenn sie nicht im ersten Absatz erfahren, worum es geht und was das Fazit ist, blättern sie weiter (oder klicken weg).</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Die Lösung:</strong> Du nutzt das <strong><span class="smart-word">Prinzip der umgekehrten Pyramide</span></strong>. Der allererste Absatz nach der Überschrift (man nennt ihn den Lead oder Teaser) enthält bereits die Kernaussage deines gesamten Textes. Er beantwortet sofort die W-Fragen: Wer macht was, wann, wo und warum?</p>
+            <p><strong>Dein Aufbau für den Aufsatz:</strong></p>
+            <ul>
+                <li><strong>Spitze (oben, am breitesten):</strong> Der Lead-Absatz (Zusammenfassung des Problems).</li>
+                <li><strong>Mitte:</strong> Die Auswertung der Materialien (Expertenmeinungen, Ursachen, Statistiken).</li>
+                <li><strong>Ende (unten, am schmalsten):</strong> Hintergrunddetails oder ein Ausblick in die Zukunft.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🎬 <span class="number">3.</span> Der szenische Einstieg (Das Feature-Element für die Note <span class="number">1</span>)</h2>
+        <p>Wenn dein Artikel nicht für ein trockenes Lexikon, sondern für eine Zeitung oder einen Blog gedacht ist, musst du den Leser emotional abholen. Ein reiner Fakten-Start wirkt hier deplatziert.</p>
+        
+        <div class="box fact-box">
+            <p><strong>Der Profi-Trick:</strong> Du startest mit einer extrem kurzen, fiktiven Alltagsszene (einem sogenannten <strong><span class="smart-word">szenischen Einstieg</span></strong>), bevor du im zweiten Absatz die harten Fakten aus dem Material lieferst. Das nennt man in der Presse ein „Feature“.</p>
+        </div>
+
+        <div class="box def-box">
+            <ul>
+                <li><span class="highlight-red">Falsch (zu trocken):</span> <em>„Die Digitalisierung an Schulen nimmt zu. Laut einer Studie nutzen <span class="number">80</span> % der Schüler ein Tablet.“</em></li>
+                <li><span class="highlight-green">Richtig (szenisch):</span> <em>„Das leise Tippen auf den Glasscheiben hat das Kratzen der Kreide längst verdrängt. Wenn Herr Müller morgens die 10b betritt, blickt er auf <span class="number">25</span> leuchtende Bildschirme. Eine Szene, die sich so oder so ähnlich mittlerweile an fast allen Schulen abspielt. Doch was bedeutet dieser digitale Wandel eigentlich für den Lernerfolg? Die aktuellen Studienlagen der Experten liefern hierzu ein überraschendes Bild.“</em></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>💻 <span class="number">4.</span> Die digitale Illusion: Einen Blogbeitrag auf Papier simulieren</h2>
+        <p>Wenn die Aufgabe explizit einen Online-Artikel oder Blogbeitrag fordert, kannst und musst du dem Korrektor beweisen, dass du die Merkmale dieses digitalen Formats kennst – auch wenn du mit einem Füller auf Papier schreibst!</p>
+        
+        <div class="box smart-box">
+            <ul>
+                <li><strong><span class="smart-word">Zwischenüberschriften (Sublines)</span>:</strong> Im Internet liest niemand einen durchgehenden Textblock von <span class="number">drei</span> Seiten. Setze nach jedem großen Sinnabschnitt eine knackige Zwischenüberschrift, die das kommende Unterthema zusammenfasst (z. B. <em>„Wenn der Algorithmus entscheidet“</em> oder <em>„Linguisten geben Entwarnung“</em>). Das lockert die Optik extrem auf und strukturiert deinen Text perfekt.</li>
+                <li><strong><span class="smart-word">Hyperlinks simulieren</span>:</strong> In einem echten Blogbeitrag würde der Autor Quellen einfach verlinken. Auf dem Klausurbogen simulierst du das sprachlich!<br>
+                <em>Formulierung: „Ein Blick auf die kürzlich veröffentlichte JIM-Studie (Material <span class="number">2</span>) zeigt deutlich...“ oder „Wer sich genauer mit den Empfehlungen des Kultusministeriums auseinandersetzt, stellt fest...“</em></li>
+                <li><strong><span class="smart-word">Die Community-Ansprache</span>:</strong> Ein Blog lebt von der Interaktion mit den Lesern (Kommentarfunktion). Das baust du am Ende deines Textes zwingend ein!<br>
+                <em>Formulierung für den Schluss: „Die Debatte ist hiermit sicherlich nicht beendet. Wie steht ihr zu diesem Thema? Teilt eure Erfahrungen in den Kommentaren unter diesem Beitrag!“</em></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🎨 <span class="number">5.</span> Optische Tricks auf dem Klausurbogen (Das Layout-Design)</h2>
+        <p>Nutze die weiße Fläche deines Papiers als Werkzeug, um die Textsorte auch visuell zu untermauern.</p>
+        
+        <div class="box def-box">
+            <ul>
+                <li><strong>Der <span class="smart-word">Dachzeilen-Trick</span>:</strong> Eine echte Zeitungsseite hat über der eigentlichen, großen Überschrift (Headline) oft eine kleine Dachzeile, die das grobe Thema angibt.<br>
+                <em>So sieht das auf dem Papier aus:</em><br>
+                <small>(Klein darüber geschrieben):</small> Bildung im <span class="number">21.</span> Jahrhundert<br>
+                <strong>(Groß, in die Mitte): Die Generation Copy-Paste – Verlernen wir das Denken?</strong></li>
+            </ul>
+        </div>
+
+        <div class="box fact-box">
+            <ul>
+                <li><strong>Der <span class="smart-word">fiktive Bild-Platzhalter</span>:</strong> Wenn du ganz mutig bist und extrem professionell wirken willst, ziehst du nach der Überschrift am Rand ein kleines Viereck mit dem Lineal und schreibst dezent <em>„[Platzhalter für Symbolbild: Smartphone]“</em> hinein. Danach beginnst du mit deinem Text. Das zeigt dem Prüfer: Dieser Schüler denkt redaktionell!</li>
+                <li><strong>Der <span class="smart-word">Autoren-Nachklapp</span>:</strong> Am Ende eines Zeitungs- oder Blogartikels steht immer, wer ihn verfasst hat. Beende deinen Text mit einem kleinen Absatzstrich und schreibe ans rechte untere Ende der Seite: <em>„Ein Beitrag von [Dein fiktiver Name oder Kürzel, z. B. Redaktionsteam der Jgst. 12].“</em><br>
+                <span class="highlight-red">(Achtung: Niemals deinen echten Klarnamen in der Abiturklausur verwenden, das verstößt gegen die Anonymitätsregeln!).</span></li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
