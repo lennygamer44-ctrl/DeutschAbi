@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Innere Mehrsprachigkeit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        .highlight-red {
+            color: #c62828;
+            font-weight: bold;
+        }
+        
+        .highlight-green {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🧅 Hefteintrag <span class="number">48</span>: Pflichtthema <span class="number">2026</span> (Teil <span class="number">7</span>) – Innere Mehrsprachigkeit: Dialektsterben und die Kiezdeutsch-Debatte</h1>
+
+    <div class="box fact-box">
+        <p>Wenn das Abiturthema im Bereich „Sprache“ liegt, geht es nicht immer nur um Digitalisierung oder Anglizismen (siehe Hefteinträge <span class="number">44</span> und <span class="number">45</span>). Ein weiterer absoluter Dauerbrenner, den das Kultusministerium liebt, ist die sogenannte <strong><span class="smart-word">innere Mehrsprachigkeit</span></strong>.</p>
+        <p>Oft bekommst du Materialien, in denen sich Autoren über den Verlust ihres Heimatdialekts beschweren oder in denen sich Lehrer über das „Ghettodeutsch“ (Kiezdeutsch) auf dem Pausenhof aufregen. Um hier nicht in Stammtisch-Parolen abzurutschen, musst du das folgende linguistische <span class="smart-word">Eigenwissen</span> abrufen können.</p>
+    </div>
+
+    <section>
+        <h2>🧅 <span class="number">1.</span> Das Grundprinzip: Die innere Mehrsprachigkeit (Das Zwiebelmodell)</h2>
+        <p>Stell dir die deutsche Sprache nicht als einen massiven Felsblock vor, sondern wie eine Zwiebel mit vielen Schichten. Jeder Mensch spricht Deutsch, aber niemand spricht immer dieselbe Schicht. Das nennt man <span class="smart-word">innere Mehrsprachigkeit</span> oder das Beherrschen von <strong>Varietäten</strong>.</p>
+        
+        <div class="box def-box">
+            <ul>
+                <li><strong>Die <span class="smart-word">Standardvarietät</span> (Hochdeutsch):</strong> Die genormte, überregionale Sprache (Duden). Sie wird in der Tagesschau gesprochen und im Abitur geschrieben. Sie ist wichtig für die gesellschaftliche Teilhabe.</li>
+                <li><strong>Die regionalen Varietäten (Dialekte / Mundarten):</strong> Schwäbisch, Bairisch, Sächsisch. Sie sind geografisch stark begrenzt und oft nur mündlich existent.</li>
+                <li><strong>Die sozialen Varietäten (<span class="smart-word">Soziolekte</span>):</strong> Das ist die Sprache einer bestimmten gesellschaftlichen Gruppe. Dazu gehören Jugendsprache, Fachsprachen (z.B. Mediziner-Latein) oder die Sprache bestimmter Milieus.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🏡 <span class="number">2.</span> Die Dialekt-Debatte: Stirbt unsere Heimat aus?</h2>
+        <p><strong>Das Material:</strong> Oft liegt dir in der Klausur ein melancholischer Text vor (z. B. Material <span class="number">1</span>), in dem ein Autor wehmütig beschreibt, dass Kinder auf dem Dorf keinen Dialekt mehr sprechen.</p>
+        
+        <div class="box fact-box">
+            <p><strong>Dein <span class="smart-word">Eigenwissen</span> (Die Ursachen):</strong> Warum verschwindet der Dialekt (Dialektschwund)? Du musst dem Korrektor die soziologischen Gründe nennen:</p>
+            <ul>
+                <li><strong>Erhöhte Mobilität:</strong> Die Menschen bleiben heute nicht mehr ihr ganzes Leben in dem Dorf, in dem sie geboren wurden. Wer zum Studieren nach Berlin oder Hamburg zieht, muss seinen extremen Dialekt ablegen, um überhaupt verstanden zu werden.</li>
+                <li><strong>Medieneinfluss:</strong> Durch Fernsehen, Radio und das Internet werden wir rund um die Uhr mit der Standardvarietät beschallt. Das färbt unbewusst ab.</li>
+                <li><strong>Stigmatisierung:</strong> Lange Zeit galt der Dialekt an Schulen als "Bauernsprache" oder Zeichen von mangelnder Bildung. Eltern erziehen ihre Kinder heute oft bewusst im Standarddeutschen, um ihnen bessere Karrierechancen zu ermöglichen.</li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>So baust du es in den Aufsatz ein:</strong></p>
+            <p><em>„Die von dem Autor in Material <span class="number">1</span> beklagte Rückläufigkeit der Dialekte lässt sich soziolinguistisch klar begründen. Ursächlich hierfür ist neben der zunehmenden geografischen Mobilität der Arbeitswelt vor allem die historische Stigmatisierung der Mundart, welche von vielen Eltern fälschlicherweise als Karrierehindernis für ihre Kinder wahrgenommen wurde.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🛹 <span class="number">3.</span> Jugendsprache als Soziolekt: Warum reden die so komisch?</h2>
+        <p>Wenn das Material Texte über Jugendsprache enthält, wettern ältere Autoren oft über die "Verstümmelung" der Sprache durch Begriffe wie <em>cringe</em>, <em>smash</em> oder <em>sus</em>.</p>
+        
+        <div class="box fact-box">
+            <p><strong>Dein linguistischer Joker (Die Funktion):</strong> Jugendsprache ist keine fehlerhafte Sprache, sondern sie erfüllt psychologisch und sozial extrem wichtige Funktionen, die du im Aufsatz benennen musst:</p>
+            <ul>
+                <li><strong>Abgrenzung (In-Group / Out-Group):</strong> Jugendliche wollen nicht klingen wie ihre Eltern oder Lehrer. Die Sprache fungiert als Geheimcode, um Erwachsene auszugrenzen und einen eigenen, elternfreien Raum zu schaffen.</li>
+                <li><strong>Identitätsstiftung:</strong> Wer die aktuellen Jugendwörter beherrscht, beweist, dass er zur Gruppe (Peergroup) gehört. Es schafft Zusammenhalt.</li>
+                <li><strong>Sprachliche Kreativität:</strong> Jugendsprache ist extrem innovativ, spielt mit Metaphern, Ironie und Übertreibungen. Sie ist ein Experimentierfeld.</li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>So baust du es in den Aufsatz ein:</strong></p>
+            <p><em>„Entgegen der defizitären Sichtweise aus Material <span class="number">2</span> muss Jugendsprache als hochfunktionaler <span class="smart-word">Soziolekt</span> betrachtet werden. Sie dient den Heranwachsenden primär als Instrument der Identitätsfindung und der bewussten sprachlichen Abgrenzung von der Elterngeneration, weshalb sie einer ständigen, kreativen Erneuerung unterliegt.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🏙️ <span class="number">4.</span> Der Endgegner im Abitur: Das "Kiezdeutsch"</h2>
+        <p>Ein extrem häufiges und provokantes Abiturthema ist der multiethnische Soziolekt, der in den Medien oft abwertend als "Kanak Sprak" oder "Ghettodeutsch" bezeichnet wird, in der Wissenschaft aber <strong><span class="smart-word">Kiezdeutsch</span></strong> heißt.</p>
+        
+        <div class="box def-box">
+            <ul>
+                <li><strong>Das Merkmal:</strong> Auffällig sind das Weglassen von Präpositionen und Artikeln (Kontraktion), z.B. <em>„Ich geh Bahnhof“</em> (statt: Ich gehe zum Bahnhof) oder <em>„Lass Kino gehen“</em>. Zudem werden oft Lehnwörter aus dem Türkischen oder Arabischen eingebaut (z.B. Wallah, Yallah, Lan).</li>
+                <li><strong>Der Konflikt im Material:</strong> Konservative Autoren sehen hier das absolute Ende der deutschen Grammatik und ein Zeichen für gescheiterte Integration.</li>
+            </ul>
+        </div>
+
+        <div class="box fact-box">
+            <p><strong>Die wissenschaftliche Sicht (Prof. Dr. Heike Wiese):</strong> Die bekannte Linguistin Heike Wiese hat bewiesen, dass Kiezdeutsch kein „gebrochenes Deutsch“ von Ausländern ist. Es ist ein eigener, vollwertiger Dialekt, der vor allem von Jugendlichen (auch von solchen ohne Migrationshintergrund!) in urbanen Räumen gesprochen wird. Das Weglassen der Artikel ist keine Dummheit, sondern folgt festen inneren Grammatikregeln (Informationsverdichtung).</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>So baust du es in den Aufsatz ein:</strong></p>
+            <p><em>„Die linguistische Forschung, insbesondere die Arbeiten von Heike Wiese, widerlegen die steile These des Autors aus Material <span class="number">3</span>. <span class="smart-word">Kiezdeutsch</span> ist demnach kein Indikator für mangelnde Integration oder grammatikalische Inkompetenz, sondern ein dynamischer, multiethnischer Soziolekt, der in urbanen Ballungsräumen als Ausdruck einer gemeinsamen, multikulturellen Identität gesprochen wird.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🔄 <span class="number">5.</span> Der Schlüsselbegriff für dein Fazit: Code-Switching</h2>
+        <p>Wenn du all diese Varietäten (Standarddeutsch, Dialekt, Jugendsprache, Kiezdeutsch) in deinem informierenden Text behandelt hast, brauchst du für deinen Schlussteil ein versöhnliches, wissenschaftliches Fazit.</p>
+        
+        <div class="box def-box">
+            <p>Das absolute Zauberwort hierfür lautet <strong><span class="smart-word">Code-Switching</span></strong> (der situative Sprachwechsel).</p>
+        </div>
+
+        <div class="box fact-box">
+            <p>Die Linguistik fordert nicht, dass Kiezdeutsch oder extremer Dialekt ausgemerzt werden sollen. Es ist völlig in Ordnung, wenn Jugendliche auf dem Schulhof <em>„Ich geh Bahnhof“</em> sagen oder der Bauer tiefstes Bairisch spricht.</p>
+            <p><strong>Das eigentliche Ziel:</strong> Das Bildungssystem muss sicherstellen, dass die Schüler das "Code-Switching" beherrschen. Das bedeutet: Sie müssen fähig sein, im Bewerbungsgespräch oder in der Abiturklausur wie auf Knopfdruck in die Standardvarietät (Hochdeutsch) zu wechseln. Solange dieser Wechsel funktioniert, ist jede zusätzliche Varietät (Dialekt oder Soziolekt) kein Verfall, sondern eine Bereicherung der sprachlichen Kompetenz.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>So formulierst du den perfekten Ausblick:</strong></p>
+            <p><em>„Zusammenfassend lässt sich festhalten, dass der Erhalt regionaler und sozialer Varietäten keineswegs eine Bedrohung für die deutsche Sprache darstellt. Die eigentliche pädagogische Herausforderung der Zukunft liegt vielmehr darin, den Schülern ein sicheres ‚<span class="smart-word">Code-Switching</span>‘ zu vermitteln, damit sie je nach sozialem Kontext souverän zwischen Standard- und Umgangssprache wechseln können, ohne dabei ihre sprachlichen Wurzeln aufgeben zu müssen.“</em></p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
