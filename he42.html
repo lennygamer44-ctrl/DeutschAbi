@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Argumentationsstrukturen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        .highlight-red {
+            color: #c62828;
+            font-weight: bold;
+        }
+        
+        .highlight-green {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🔎 Hefteintrag <span class="number">42</span>: Argumentationsstrukturen im Material knacken – Wie du Experten-Aussagen professionell wiedergibst</h1>
+
+    <section>
+        <h2>🧐 <span class="number">1.</span> Der Röntgen-Blick für Sachtexte (Warum „Er sagt, dass...“ nicht ausreicht)</h2>
+        <div class="box fact-box">
+            <p>Die Materialien, die das Kultusministerium dir im Abitur vorlegt (Sachtexte, Essays, Kommentare), sind selten rein neutrale Berichte. Die Autoren dieser Texte wollen den Leser meistens von einer bestimmten These überzeugen (z. B. <em>„Social Media zerstört die Jugend“</em> oder <em>„Der Dialekt ist wertvoll“</em>).</p>
+        </div>
+        
+        <p>Wenn du in deinem eigenen informierenden Text (z. B. für die Broschüre) diese Materialien auswertest, reicht es für die Bestnote nicht aus, nur zu schreiben, <em>was</em> der Autor behauptet. Du musst dem Korrektor zeigen, <em>wie</em> der Autor seine Behauptung stützt.</p>
+
+        <div class="box smart-box">
+            <p>Dafür nutzt du dein Fachwissen über <strong><span class="smart-word">Argumenttypen</span></strong>. Wenn du diese Begriffe in deinen Aufsatz einbaust, wirkt deine Textwiedergabe sofort akademisch und extrem professionell.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>👑 <span class="number">2.</span> Das <span class="smart-word">Autoritätsargument</span> (Der Verweis auf die "hohen Tiere")</h2>
+        <div class="box def-box">
+            <ul>
+                <li><strong>Wie es funktioniert:</strong> Der Autor im Material stützt seine eigene Meinung, indem er sich auf eine weithin akzeptierte Autorität beruft. Das können berühmte Wissenschaftler, renommierte Institute (wie das Max-Planck-Institut) oder offizielle Studien sein.</li>
+                <li><strong>Wie du es erkennst:</strong> Im Text stehen Formulierungen wie: <em>„Wie bereits Professor Müller von der Universität München feststellte...“</em> oder <em>„Eine aktuelle PISA-Studie belegt...“</em></li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Dein Satz-Tuning für den Aufsatz:</strong></p>
+            <p><em>„Um die Dringlichkeit des Problems zu unterstreichen, führt die Autorin ein starkes <span class="smart-word">Autoritätsargument</span> an, indem sie sich auf die jüngsten Ergebnisse der PISA-Studie beruft, welche belegen, dass...“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>📊 <span class="number">3.</span> Das <span class="smart-word">Faktenargument</span> (Die harte Realität)</h2>
+        <div class="box def-box">
+            <ul>
+                <li><strong>Wie es funktioniert:</strong> Dies ist das solideste Argument. Die These wird durch überprüfbare und unstrittige Tatsachenaussagen gestützt. Oft geschieht dies durch historische Daten oder reine Logik.</li>
+                <li><strong>Wie du es erkennst:</strong> Der Text nennt konkrete historische Ereignisse, physikalische Gesetze oder unbestreitbare gesellschaftliche Entwicklungen. (z. B. <em>„Seit der Einführung des Smartphones im Jahr <span class="number">2007</span> hat sich die Kommunikation verändert.“</em>)</li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Dein Satz-Tuning für den Aufsatz:</strong></p>
+            <p><em>„Seine steile These untermauert der Journalist mit einem unumstößlichen <span class="smart-word">Faktenargument</span>: Er verweist auf die historisch belegte Einführung des Smartphones, die...“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>⚖️ <span class="number">4.</span> Das <span class="smart-word">normative Argument</span> (Der Appell an die Moral)</h2>
+        <div class="box def-box">
+            <ul>
+                <li><strong>Wie es funktioniert:</strong> Die These wird mit weithin akzeptierten Wertmaßstäben (Normen) oder moralischen Verpflichtungen der Gesellschaft begründet. Dieses Argument taucht sehr oft bei Themen wie Inklusion, Gendern oder Bildungsgerechtigkeit auf.</li>
+                <li><strong>Wie du es erkennst:</strong> Der Autor spricht viel von Verantwortung, Gerechtigkeit, Werten, Grundrechten oder ethischen Pflichten. (z. B. <em>„Es ist unsere moralische Pflicht als Gesellschaft, jedem Kind den Zugang zu Büchern zu ermöglichen.“</em>)</li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Dein Satz-Tuning für den Aufsatz:</strong></p>
+            <p><em>„Hierbei verlässt der Autor die rein sachliche Ebene und bedient sich eines <span class="smart-word">normativen Arguments</span>. Er appelliert direkt an das Gerechtigkeitsempfinden der Gesellschaft, um zu verdeutlichen, dass...“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🔄 <span class="number">5.</span> Das <span class="smart-word">analogisierende Argument</span> (Der clevere Vergleich)</h2>
+        <div class="box def-box">
+            <ul>
+                <li><strong>Wie es funktioniert:</strong> Das aktuelle Thema wird mit einem anderen, bereits bekannten Bereich verglichen (Analogie), der ähnlich funktioniert. Wenn es dort so war, muss es hier auch so sein.</li>
+                <li><strong>Wie du es erkennst:</strong> Der Text zieht historische Parallelen oder vergleicht Äpfel mit Birnen, um etwas anschaulich zu machen. (z. B. <em>„Die Angst vor dem Smartphone ist übertrieben. Als der Buchdruck oder die Eisenbahn erfunden wurden, hatten die Menschen anfangs auch Panik.“</em>)</li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Dein Satz-Tuning für den Aufsatz:</strong></p>
+            <p><em>„Um den Kritikern den Wind aus den Segeln zu nehmen, nutzt der Experte ein <span class="smart-word">analogisierendes Argument</span>. Er zieht eine historische Parallele zur Erfindung des Buchdrucks, um aufzuzeigen, dass...“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🤺 <span class="number">6.</span> Das <span class="smart-word">indirekte Argument</span> (Den Gegner lächerlich machen)</h2>
+        <div class="box def-box">
+            <ul>
+                <li><strong>Wie es funktioniert:</strong> Der Autor begründet seine eigene These nicht direkt, sondern er nimmt das Gegenargument der anderen Seite, zerlegt es und beweist, dass es unlogisch oder widersprüchlich ist.</li>
+                <li><strong>Wie du es erkennst:</strong> Im Text steht oft: <em>„Die Kritiker behaupten zwar immer wieder, dass..., aber wenn man genauer hinsieht, ist das völlig absurd, weil...“</em></li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Dein Satz-Tuning für den Aufsatz:</strong></p>
+            <p><em>„Anstatt eigene Beweise zu liefern, operiert der Sprachwissenschaftler hier mit einem <span class="smart-word">indirekten Argument</span>: Er entkräftet die Position seiner Gegner als unlogisch, woraus sich ableiten lässt, dass...“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🛡️ <span class="number">7.</span> Der "Schutzschild-Hinweis" für das Format <span class="number">III</span></h2>
+        <div class="box fact-box">
+            <p><span class="highlight-red">Achtung:</span> Verwechsle diese Analyse nicht mit einer reinen Textanalyse (Format <span class="number">II</span> oder <span class="number">IV</span>). Du sollst das Material nicht bewerten oder kritisieren (<em>„Das Argument des Autors ist leider sehr schwach“</em> ➔ Falsch!, das wäre deine eigene Meinung).</p>
+        </div>
+        
+        <div class="box smart-box">
+            <p>Du nutzt diese Fachbegriffe nur als <strong>Werkzeug der Informationsvermittlung</strong>. Du informierst deinen Leser (z. B. die Eltern in der Broschüre) völlig wertfrei darüber, mit welchen rhetorischen und argumentativen Mitteln die Experten in der aktuellen Debatte arbeiten. Das beweist höchste Textkompetenz (<span class="smart-word">AFB III</span>) und sichert dir die Punkte in der Darstellungsleistung.</p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
