@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Die Top 5 Fehlerfallen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        .highlight-red {
+            color: #c62828;
+            font-weight: bold;
+        }
+        
+        .highlight-green {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🚨 Hefteintrag <span class="number">36</span>: Die Top <span class="number">5</span> Fehlerfallen beim Korrekturlesen (Darauf achten die Prüfer besonders)</h1>
+
+    <div class="box fact-box">
+        <p>Wenn du in den letzten <span class="number">45</span> Minuten der Prüfung deinen Text korrigierst, scannst du ihn exakt nach diesen <span class="number">fünf</span> typischen Fehlern ab, die fast in jeder Abiturklausur auftauchen:</p>
+    </div>
+
+    <section>
+        <h2>🔤 <span class="number">1.</span> Die "Das vs. Dass"-Schwäche</h2>
+        <p>Ein absoluter Klassiker, der beim schnellen Schreiben extrem oft passiert.</p>
+        
+        <div class="box def-box">
+            <p><strong>Der Test:</strong> Kannst du das Wort durch <em>dieses</em>, <em>jenes</em> oder <em>welches</em> ersetzen?</p>
+            <ul>
+                <li>Wenn <strong>JA</strong>, dann schreibst du es mit einem 's' (das). ➔ <em>Das (dieses) Buch, das (welches) ich lese.</em></li>
+                <li>Wenn <strong>NEIN</strong>, dann schreibst du es mit Doppel-'s' (dass). ➔ <em>Ich hoffe, dass es nicht regnet.</em> (Du kannst hier nicht „Ich hoffe, dieses es nicht regnet“ sagen).</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🪢 <span class="number">2.</span> Der vergessene Relativsatz-Einschluss</h2>
+        <p>Wenn du zusätzliche Informationen in einen Satz einschiebst, musst du diesen Einschub vorne UND hinten mit einem Komma abtrennen. Schüler vergessen im Eifer des Gefechts oft das zweite Komma.</p>
+        
+        <div class="box smart-box">
+            <ul>
+                <li><span class="highlight-red">Falsch:</span> Die Digitalisierung, die stetig voranschreitet verändert unseren Alltag.</li>
+                <li><span class="highlight-green">Richtig:</span> Die Digitalisierung<strong>,</strong> die stetig voranschreitet<strong>,</strong> verändert unseren Alltag.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>⏰ <span class="number">3.</span> Falsche Groß- und Kleinschreibung bei Zeitangaben</h2>
+        <div class="box fact-box">
+            <ul>
+                <li><strong>Tageszeiten:</strong> Nach Wörtern wie <em>heute, gestern, morgen</em> schreibst du die Tageszeit groß. ➔ <em>heute Morgen, gestern Abend, morgen Nachmittag.</em></li>
+                <li><strong>Wochentage mit "s":</strong> Wenn ein "s" am Ende steht, ist es ein Adverb und wird klein geschrieben. ➔ <em>sonntags, abends, morgens.</em> (Aber: <em>Der Sonntag, am Abend</em>).</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🔗 <span class="number">4.</span> Der Infinitiv mit "zu" (Erweitert)</h2>
+        <p>Wenn ein „zu“ mit einem Verb in der Grundform steht und noch weitere Wörter dazukommen, muss ein Komma gesetzt werden.</p>
+        
+        <div class="box def-box">
+            <p><strong>Beispiel:</strong> Die Experten raten den Eltern<strong>,</strong> den Medienkonsum ihrer Kinder stark zu kontrollieren.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🌍 <span class="number">5.</span> Scheinbare Fremdwort-Fehler (Zusammen- und Getrenntschreibung)</h2>
+        <p>Wenn du englische Begriffe benutzt (was bei Themen wie Social Media unvermeidbar ist), musst du sie nach den deutschen Rechtschreibregeln behandeln.</p>
+        
+        <div class="box smart-box">
+            <p>Wenn du ein deutsches Nomen mit einem englischen Begriff kombinierst, musst du einen Bindestrich setzen oder es komplett zusammenschreiben.</p>
+            <ul>
+                <li><span class="highlight-red">Falsch:</span> Social Media Nutzung / Smartphone Verbot.</li>
+                <li><span class="highlight-green">Richtig:</span> Social-Media-Nutzung / Smartphone-Verbot.</li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
