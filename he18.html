@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Das Programmheft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎭 Hefteintrag <span class="number">18</span>: Textsorte im Detail: Das Programmheft (Hintergründe liefern, Veranschaulichung am Theaterstück)</h1>
+
+    <section>
+        <h2>🎬 <span class="number">1.</span> Das Prüfungsszenario: Deine Rolle als Schul-Dramaturg</h2>
+        <div class="box fact-box">
+            <p>Das Kultusministerium liebt das Szenario der Schultheater-AG. Die Einleitung der Abituraufgabe lautet dann zum Beispiel: <em>„Die Theatergruppe Ihrer Schule inszeniert den Klassiker Faust (oder ein anderes Stück). Sie verfassen für das begleitende <span class="smart-word">Programmheft</span> einen informativen Beitrag.“</em></p>
+        </div>
+        <p><strong>Deine Aufgabe:</strong> Du bist der Experte, der dem Publikum das Stück erklären muss, bevor sich der Vorhang hebt. Du lieferst das Hintergrundwissen, damit die Zuschauer die Inszenierung besser verstehen.</p>
+    </section>
+
+    <section>
+        <h2>🎯 <span class="number">2.</span> Die Zielgruppe und das Textziel</h2>
+        <div class="box def-box">
+            <ul>
+                <li><strong>Dein Publikum:</strong> Die Zuschauer im Theatersaal. Das ist eine bunt gemischte Gruppe aus Mitschülern, Eltern, Großeltern und Lehrkräften.</li>
+                <li><strong>Das <span class="smart-word">Textziel</span>:</strong> Du musst informieren, Neugierde wecken und Verständnis für das Stück aufbauen.</li>
+                <li><strong>Das Sprachniveau:</strong> Da die Zuschauer im Theatersaal sitzen und sich auf einen kulturellen Abend freuen, darf die Sprache hier etwas anspruchsvoller und literarischer sein als bei einer reinen Elternbroschüre. Dennoch gilt: Keine trockene, rein wissenschaftliche Abhandlung schreiben! Es muss unterhaltsam und gut lesbar bleiben.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🧠 <span class="number">3.</span> Der "Veranschaulichungs-Zwang" (Dein Eigenwissen als Retter)</h2>
+        <div class="box fact-box">
+            <p>Bei dieser Textsorte gibt es fast immer einen ganz speziellen Arbeitsauftrag (einen <span class="smart-word">Operator</span>), der dich sofort <span class="number">0</span> Punkte kosten kann, wenn du ihn ignorierst.</p>
+            <p>Er lautet: <em>„Veranschaulichen Sie Ihre theoretischen Ausführungen durch geeignete Verweise auf die Dramenhandlung!“</em></p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Was das bedeutet:</strong> Wenn in Material <span class="number">2</span> steht, dass in der Epoche der Klassik die "Vernunft" extrem wichtig war, darfst du das nicht einfach nur abschreiben. Du musst sofort ein Beispiel aus dem Theaterstück (das du im Unterricht gelesen hast) ergänzen.</p>
+            <p><em>Beispiel: „Diese Fokussierung auf die Vernunft zeigt sich in unserem heutigen Stück besonders deutlich in der Szene, als die Hauptfigur entscheidet, dass...“</em></p>
+            <p>Das ist der Moment, in dem du dem Korrektor beweist, dass du das Pflicht-Buch aus dem Unterricht wirklich kennst.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🏗️ <span class="number">4.</span> Der Aufbau eines Programmheft-Beitrags</h2>
+        <div class="box def-box">
+            <ul>
+                <li><strong>Die Überschrift:</strong> Oft gibt dir die Aufgabenstellung den Titel exakt vor (z. B. „Faust heute – Warum wir Goethe noch spielen“). Wenn nicht, erfinde einen Titel, der das Thema des Stücks mit der heutigen Zeit verbindet.</li>
+                <li><strong>Die Einleitung (Der Teaser):</strong> Du beginnst nicht mit „Goethe wurde <span class="number">1749</span> geboren“. Du beginnst mit der Aktualität. Warum spielt eure Schule dieses Stück genau jetzt? <em>Beispiel: „Liebes Publikum, auf den ersten Blick scheint ein über <span class="number">200</span> Jahre altes Stück wenig mit unserem modernen Alltag zu tun zu haben. Doch der Schein trügt...“</em></li>
+                <li><strong>Der Hauptteil:</strong> Hier wertest du die Materialien aus. Meistens geht es um die Erklärung der literarischen Epoche, die Motive des Autors oder die psychologische Konstellation der Figuren. Nutze hier unbedingt den <span class="smart-word">„Burger-Trick“</span> aus Hefteintrag <span class="number">6</span> (Material-Info + Eigenwissen + konkretes Beispiel aus dem Stück).</li>
+                <li><strong>Der Schluss:</strong> Ein Programmheft endet traditionell mit guten Wünschen für den Abend. <em>Beispiel: „Wir hoffen, dass Ihnen diese Hintergrundinformationen spannende neue Perspektiven auf das Stück eröffnen, und wünschen Ihnen nun einen anregenden und unterhaltsamen Theaterabend!“</em></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>📜 <span class="number">5.</span> Die Zitier-Regel für Programmhefte</h2>
+        <div class="box fact-box">
+            <p>Genau wie beim Vortrag und der Broschüre gilt auch im Programmheft: <strong>Keine Zeilennummern!</strong></p>
+        </div>
+
+        <div class="box smart-box">
+            <p>Ein Theaterbesucher möchte keinen Text lesen, der aussieht wie eine Deutsch-Klausur. Baue deine Quellen elegant in den Satzbau ein: <em>„Wie der Literaturkritiker Max Mustermann in seiner jüngsten Analyse treffend formuliert...“</em> oder <em>„Ein Blick in die historischen Aufzeichnungen zeigt, dass...“</em>.</p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
