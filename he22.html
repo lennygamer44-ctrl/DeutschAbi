@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Bildmaterial & Statistiken</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📊 Hefteintrag <span class="number">22</span>: Bildmaterial & Statistiken auswerten – Wie du Grafiken und Karikaturen für deinen Text nutzt</h1>
+
+    <section>
+        <h2>🛟 <span class="number">1.</span> Warum „nichtlineare Texte“ oft deine Rettung sind</h2>
+        <div class="box fact-box">
+            <p>Das Kultusministerium legt im Abitur oft nicht nur reine Fließtexte (lineare Texte) bei, sondern auch sogenannte <strong>„<span class="smart-word">nichtlineare Texte</span>“</strong>. Das sind Statistiken, Balkendiagramme, Infografiken oder Karikaturen.</p>
+        </div>
+        
+        <p>Viele Schüler ignorieren diese Materialien komplett, weil sie Angst haben, dass man sie schlecht zitieren kann. Das ist ein fataler Fehler!</p>
+        
+        <div class="box smart-box">
+            <p>Tatsächlich sind Bilder und Grafiken deine <strong>Rettung unter Zeitdruck</strong>: Du musst keine <span class="number">zwei</span> Seiten Text lesen, um den Kernaspekt zu finden. Die Hauptaussage springt dir hier meistens in wenigen Sekunden direkt ins Auge.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>📈 <span class="number">2.</span> Infografiken und Statistiken knacken (Die <span class="number">3</span>-Punkte-Regel)</h2>
+        <p>Wenn du ein Diagramm vor dir hast, analysiere es streng nach diesen <span class="number">drei</span> Schritten, anstatt dich in Zahlen zu verlieren:</p>
+        
+        <div class="box def-box">
+            <ul>
+                <li><strong>Schritt <span class="number">1</span> (Das Thema):</strong> Lies nur die Überschrift und die Beschriftung der Achsen (Was wird hier überhaupt gemessen?).</li>
+                <li><strong>Schritt <span class="number">2</span> (Die Extreme):</strong> Suche nur nach dem höchsten Balken (dem Maximum) und dem niedrigsten Balken (dem Minimum). Alle Zahlen dazwischen kannst du für deinen Text meistens ignorieren.</li>
+                <li><strong>Schritt <span class="number">3</span> (Der Trend):</strong> Was ist die Entwicklung? Geht die Kurve steil nach oben oder fällt sie ab?</li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Die <span class="smart-word">Übersetzer-Regel</span> für den Text:</strong> Schreibe niemals endlose Zahlenreihen in deinen Aufsatz! Übersetze die nackten Zahlen in klare Trends. Nutze Wörter wie: <em>die deutliche Mehrheit, ein drastischer Rückgang, eine kontinuierliche Steigerung, fast niemand mehr</em>.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🎨 <span class="number">3.</span> Karikaturen entschlüsseln (Das Bild in Worte fassen)</h2>
+        <p>Manchmal ist eines der Materialien eine Karikatur (z. B. ein Bild, das überspitzt zeigt, wie Jugendliche nur noch aufs Handy starren, statt Bücher zu lesen).</p>
+        
+        <div class="box fact-box">
+            <p><strong>Der Fehler:</strong> Beschreibe im Aufsatz nicht jedes Detail des Bildes (z. B. <em>„Da steht ein Mann mit einem roten Hut und hält ein Schild...“</em>). Dein Leser (z. B. in der Projektzeitung) sieht das Bild nicht!</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Die Lösung:</strong> Du musst die Kernaussage der Karikatur in eine sachliche Information übersetzen. Frage dich: Welches Problem oder welche gesellschaftliche Entwicklung kritisiert der Zeichner hier überspitzt?</p>
+        </div>
+
+        <div class="box def-box">
+            <p><strong>Beispiel für den Text:</strong> <em>„Dass die ständige Erreichbarkeit durch Smartphones auch negative Folgen für unsere Konzentration hat, bringt die beiliegende Karikatur von Max Müller treffend auf den Punkt. Sie verdeutlicht satirisch, dass...“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🖋️ <span class="number">4.</span> So baust du Bildmaterial elegant in deinen Text ein (Ohne Zeilennummern)</h2>
+        <p>Da du bei einem Bild keine (vgl. Z. <span class="number">14</span>) angeben kannst, musst du die Quelle elegant in deinen Satzfluss einbauen. So machst du das professionell:</p>
+        
+        <div class="box def-box">
+            <ul>
+                <li><strong>Bei einer Statistik:</strong> <em>„Ein Blick auf die aktuelle Erhebung des Statistischen Bundesamtes (Material <span class="number">3</span>) verdeutlicht eindrucksvoll, dass die Mehrheit der...“</em></li>
+                <li><strong>Bei einem Diagramm:</strong> <em>„Wie das beigefügte Balkendiagramm des Instituts XY zeigt, ist ein klarer Aufwärtstrend bei der Nutzung von... zu verzeichnen.“</em></li>
+                <li><strong>Bei einer Karikatur/Illustration:</strong> <em>„Die Illustration von [Name des Zeichners] verbildlicht das Problem der aktuellen Generation: Sie zeigt überspitzt, dass...“</em></li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p>Wenn du in deinem Aufsatz (z. B. einem Vortrag) gezielt auf eine Statistik verweist, zeigst du dem Korrektor, dass du die Methoden der Materialauswertung komplett verstanden hast und flexibel mit unterschiedlichen Informationsquellen umgehen kannst.</p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
