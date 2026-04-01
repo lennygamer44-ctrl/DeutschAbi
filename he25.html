@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Die Synthese (Der Perlenketten-Fehler)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🔗 Hefteintrag <span class="number">25</span>: Die Synthese – Der "Perlenketten-Fehler" und wie du Materialien intelligent verknüpfst</h1>
+
+    <section>
+        <h2>🚫 <span class="number">1.</span> Der absolute Notenkiller: Die "Perlenkette"</h2>
+        <div class="box fact-box">
+            <p>Einer der häufigsten und fatalsten Fehler beim materialgestützten Schreiben ist das bloße Aneinanderreihen der Materialien.</p>
+            <p><strong>Was das bedeutet:</strong> Ein Schüler fasst im ersten Absatz Material <span class="number">1</span> zusammen. Im zweiten Absatz fasst er Material <span class="number">2</span> zusammen. Im dritten Absatz Material <span class="number">3</span>. Er fädelt die Texte wie Perlen auf eine Schnur.</p>
+        </div>
+
+        <div class="box def-box">
+            <p><strong>Das Problem:</strong> Das Kultusministerium wertet das als schwere Verfehlung der Aufgabenstellung. Du schreibst dann nämlich keine Zusammenfassung eines Themas, sondern nur Inhaltsangaben von Einzeltexten. Die Prüfer nennen das fehlende <strong>"<span class="smart-word">Syntheseleistung</span>"</strong> (<span class="smart-word">Synthese</span> = Verknüpfung).</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>💡 <span class="number">2.</span> Die Lösung: Thematische Bündelung (Der Themen-Fokus)</h2>
+        <div class="box smart-box">
+            <p>Du ordnest deinen Hauptteil <strong>niemals</strong> nach den Nummern der Materialien (M<span class="number">1</span>, M<span class="number">2</span>, M<span class="number">3</span>...), sondern <strong>immer nach den Themen</strong> (bzw. den "versteckten Hilfen" aus Hefteintrag <span class="number">4</span>).</p>
+        </div>
+
+        <div class="box def-box">
+            <p><strong>Beispiel:</strong> Dein erster Absatz im Hauptteil behandelt das Unterthema "Ursachen für den Dialektverlust". Du schaust nun auf deine Stoffsammlung. Du stellst fest, dass in Material <span class="number">2</span>, Material <span class="number">5</span> und in der Statistik von Material <span class="number">7</span> etwas zu den Ursachen steht.</p>
+            <p>Du schreibst nun einen einzigen großen Absatz über die Ursachen und webst die Infos aus M<span class="number">2</span>, M<span class="number">5</span> und M<span class="number">7</span> geschickt in diesen <strong><span class="number">einen</span></strong> Absatz ein.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🥪 <span class="number">3.</span> Wie du Materialien im Text verknüpfst (Das Sandwich-Prinzip)</h2>
+        <p>Wenn du mehrere Quellen in einem Absatz verarbeitest, musst du dem Leser zeigen, in welchem Verhältnis diese zueinander stehen. Sind sich die Autoren einig? Widersprechen sie sich? Ergänzen sie sich?</p>
+        
+        <div class="box fact-box">
+            <ul>
+                <li><strong>Szenario A (Zustimmung):</strong> Zwei Materialien sagen das Gleiche.<br>
+                <em>So schreibst du es:</em> "Dass die Digitalisierung die Konzentration stört, betont der Forscher Müller (Material <span class="number">2</span>). Diese Beobachtung wird auch durch die aktuelle Statistik des Bundesamtes (Material <span class="number">4</span>) gestützt, welche zeigt, dass..."</li>
+                
+                <li><strong>Szenario B (Widerspruch):</strong> Zwei Materialien haben völlig unterschiedliche Meinungen.<br>
+                <em>So schreibst du es:</em> "Während die Sprachwissenschaftlerin Meier (Material <span class="number">1</span>) den Dialekt als vom Aussterben bedroht ansieht, widerspricht der Soziologe Huber (Material <span class="number">3</span>) dieser These vehement. Er geht vielmehr davon aus, dass..."</li>
+                
+                <li><strong>Szenario C (Ergänzung):</strong> Ein Material liefert die Theorie, ein anderes das praktische Beispiel.<br>
+                <em>So schreibst du es:</em> "Die theoretischen Grundlagen dieses Phänomens beschreibt Autor XY (Material <span class="number">1</span>). Ein konkretes Beispiel hierfür liefert der Erfahrungsbericht einer Lehrkraft in Material <span class="number">5</span>, aus dem hervorgeht, dass..."</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>📝 <span class="number">4.</span> Deine Vokabel-Liste für Profi-Überleitungen</h2>
+        <p>Um dem Korrektor zu beweisen, dass du eine echte <span class="smart-word">Synthese</span> schreibst, solltest du dir diese Verknüpfungswörter einprägen und sie am Anfang deiner Sätze nutzen:</p>
+        
+        <div class="box smart-box">
+            <ul>
+                <li><strong>Um Gegensätze aufzuzeigen:</strong> im Gegensatz dazu, jedoch, demgegenüber, wohingegen, auf der anderen Seite, allerdings.</li>
+                <li><strong>Um Gemeinsamkeiten zu betonen:</strong> ebenso, gleichermaßen, in ähnlicher Weise, deckungsgleich, bestätigend lässt sich anführen.</li>
+                <li><strong>Um etwas hinzuzufügen:</strong> darüber hinaus, ergänzend dazu, des Weiteren, zudem, ferner.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>👀 <span class="number">5.</span> Der Kontrollblick beim Schreiben</h2>
+        <div class="box fact-box">
+            <p>Wenn du einen Absatz beendet hast, wirf einen kurzen Blick darauf. Kommt darin nur eine einzige Quelle vor, obwohl das Thema in mehreren Materialien behandelt wird?</p>
+        </div>
+
+        <div class="box smart-box">
+            <p>Wenn ja, zwinge dich dazu, noch einen ergänzenden Satz aus einem anderen Material (oder aus deinem <span class="smart-word">Eigenwissen</span>!) anzuhängen, der mit <em>"Zudem zeigt auch Material X..."</em> beginnt. So rettest du deine Struktur-Note.</p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
