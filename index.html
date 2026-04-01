@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abitur-Masterkurs Deutsch: Inhaltsverzeichnis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f0f2f5;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --text-muted: #666666;
+            --heading-color: #1a237e;
+            --heading-secondary: #263238;
+            
+            --card-border: #2196f3;
+            --card-hover: #e3f2fd;
+            --accent-color: #e65100;
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header-section {
+            background-color: var(--container-bg);
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.2em;
+            margin-bottom: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--container-bg);
+            border-radius: 8px;
+            padding: 20px;
+            text-decoration: none;
+            color: var(--text-main);
+            border-left: 6px solid var(--card-border);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(33, 150, 243, 0.15);
+            background-color: var(--card-hover);
+        }
+
+        .card-number {
+            font-size: 0.9em;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card-title {
+            font-size: 1.1em;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        /* Besondere Hervorhebung für den letzten Eintrag */
+        .card.gold {
+            border-left-color: #ffb300;
+            background-color: #fff8e1;
+        }
+        .card.gold:hover {
+            background-color: #ffecb3;
+            box-shadow: 0 8px 20px rgba(255, 179, 0, 0.2);
+        }
+        .card.gold .card-number {
+            color: #f57f17;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-section">
+        <h1>🎓 Abitur-Masterkurs Deutsch</h1>
+        <p class="subtitle">Materialgestütztes Informieren & Pflichtthemen 2026</p>
+    </div>
+
+    <div class="grid-container">
+        <!-- Grundlagen & Strategie -->
+        <a href="He1.html" class="card">
+            <span class="card-number">Eintrag 01</span>
+            <h3 class="card-title">Die Definition von Format III</h3>
+        </a>
+        <a href="He2.html" class="card">
+            <span class="card-number">Eintrag 02</span>
+            <h3 class="card-title">Die 315-Minuten-Strategie</h3>
+        </a>
+        <a href="He3.html" class="card">
+            <span class="card-number">Eintrag 03</span>
+            <h3 class="card-title">Kern der Aufgabenstellung</h3>
+        </a>
+        <a href="he4.html" class="card">
+            <span class="card-number">Eintrag 04</span>
+            <h3 class="card-title">Versteckte Hilfen erkennen</h3>
+        </a>
+        <a href="he5.html" class="card">
+            <span class="card-number">Eintrag 05</span>
+            <h3 class="card-title">Begriffsdefinitionen</h3>
+        </a>
+        <a href="he6.html" class="card">
+            <span class="card-number">Eintrag 06</span>
+            <h3 class="card-title">Eigenwissen vs. Material</h3>
+        </a>
+        <a href="he7.html" class="card">
+            <span class="card-number">Eintrag 07</span>
+            <h3 class="card-title">Stoffsammlung & Struktur</h3>
+        </a>
+        <a href="he8.html" class="card">
+            <span class="card-number">Eintrag 08</span>
+            <h3 class="card-title">Die Grobgliederung</h3>
+        </a>
+        <a href="he9.html" class="card">
+            <span class="card-number">Eintrag 09</span>
+            <h3 class="card-title">Redaktionelle Vorgaben</h3>
+        </a>
+        <a href="he10.html" class="card">
+            <span class="card-number">Eintrag 10</span>
+            <h3 class="card-title">Das Längen-Problem (Wortzahl)</h3>
+        </a>
+        <a href="he11.html" class="card">
+            <span class="card-number">Eintrag 11</span>
+            <h3 class="card-title">Die finale Überarbeitung</h3>
+        </a>
+
+        <!-- Adressaten & Textsorten -->
+        <a href="he12.html" class="card">
+            <span class="card-number">Eintrag 12</span>
+            <h3 class="card-title">Adressatenorientierung</h3>
+        </a>
+        <a href="he13.html" class="card">
+            <span class="card-number">Eintrag 13</span>
+            <h3 class="card-title">Das Sprachniveau treffen</h3>
+        </a>
+        <a href="he14.html" class="card">
+            <span class="card-number">Eintrag 14</span>
+            <h3 class="card-title">Das Textziel definieren</h3>
+        </a>
+        <a href="he15.html" class="card">
+            <span class="card-number">Eintrag 15</span>
+            <h3 class="card-title">Textsorte: Lexikonartikel</h3>
+        </a>
+        <a href="he16.html" class="card">
+            <span class="card-number">Eintrag 16</span>
+            <h3 class="card-title">Textsorte: Vortrag / Rede</h3>
+        </a>
+        <a href="he17.html" class="card">
+            <span class="card-number">Eintrag 17</span>
+            <h3 class="card-title">Textsorte: Broschürenbeitrag</h3>
+        </a>
+        <a href="he18.html" class="card">
+            <span class="card-number">Eintrag 18</span>
+            <h3 class="card-title">Textsorte: Programmheft</h3>
+        </a>
+        <a href="he19.html" class="card">
+            <span class="card-number">Eintrag 19</span>
+            <h3 class="card-title">Textsorte: Projektzeitung</h3>
+        </a>
+
+        <!-- Materialauswertung & Synthese -->
+        <a href="he20.html" class="card">
+            <span class="card-number">Eintrag 20</span>
+            <h3 class="card-title">Arbeitsanweisung zum Material</h3>
+        </a>
+        <a href="he21.html" class="card">
+            <span class="card-number">Eintrag 21</span>
+            <h3 class="card-title">Texte auswerten (Scanner-Blick)</h3>
+        </a>
+        <a href="he22.html" class="card">
+            <span class="card-number">Eintrag 22</span>
+            <h3 class="card-title">Bildmaterial & Statistiken</h3>
+        </a>
+        <a href="he23.html" class="card">
+            <span class="card-number">Eintrag 23</span>
+            <h3 class="card-title">Goldene Regeln des Zitierens</h3>
+        </a>
+        <a href="he24.html" class="card">
+            <span class="card-number">Eintrag 24</span>
+            <h3 class="card-title">Indirekte Rede und Konjunktiv</h3>
+        </a>
+        <a href="he25.html" class="card">
+            <span class="card-number">Eintrag 25</span>
+            <h3 class="card-title">Synthese & Perlenketten-Fehler</h3>
+        </a>
+
+        <!-- Pflichtthemen & Analyse -->
+        <a href="he26.html" class="card">
+            <span class="card-number">Eintrag 26</span>
+            <h3 class="card-title">Pflichtthema: Politische Sprache & Framing</h3>
+        </a>
+        <a href="he27.html" class="card">
+            <span class="card-number">Eintrag 27</span>
+            <h3 class="card-title">Pflichtthema: Umbrüche Literatur um 1900</h3>
+        </a>
+        <a href="he28.html" class="card">
+            <span class="card-number">Eintrag 28</span>
+            <h3 class="card-title">Literarische Strömungen um 1900</h3>
+        </a>
+        <a href="he29.html" class="card">
+            <span class="card-number">Eintrag 29</span>
+            <h3 class="card-title">Zentrale Motive um 1900</h3>
+        </a>
+        <a href="he30.html" class="card">
+            <span class="card-number">Eintrag 30</span>
+            <h3 class="card-title">Die Erörterungs-Falle</h3>
+        </a>
+        <a href="he31.html" class="card">
+            <span class="card-number">Eintrag 31</span>
+            <h3 class="card-title">Literarische Texte als Material</h3>
+        </a>
+        <a href="he32.html" class="card">
+            <span class="card-number">Eintrag 32</span>
+            <h3 class="card-title">Der perfekte Einstieg</h3>
+        </a>
+        <a href="he33.html" class="card">
+            <span class="card-number">Eintrag 33</span>
+            <h3 class="card-title">Der Notfall-Koffer</h3>
+        </a>
+        <a href="he34.html" class="card">
+            <span class="card-number">Eintrag 34</span>
+            <h3 class="card-title">Sprachliches Tuning (Ausdruck)</h3>
+        </a>
+        <a href="he35.html" class="card">
+            <span class="card-number">Eintrag 35</span>
+            <h3 class="card-title">Der Masterplan für 315 Minuten</h3>
+        </a>
+        <a href="he36.html" class="card">
+            <span class="card-number">Eintrag 36</span>
+            <h3 class="card-title">Top 5 Fehlerfallen (Korrektur)</h3>
+        </a>
+        <a href="he37.html" class="card">
+            <span class="card-number">Eintrag 37</span>
+            <h3 class="card-title">Kohäsion und Kohärenz</h3>
+        </a>
+        <a href="he38.html" class="card">
+            <span class="card-number">Eintrag 38</span>
+            <h3 class="card-title">Der perfekte Schlussteil</h3>
+        </a>
+        <a href="he39.html" class="card">
+            <span class="card-number">Eintrag 39</span>
+            <h3 class="card-title">Satzbau-Tuning (Syntax)</h3>
+        </a>
+        <a href="he40.html" class="card">
+            <span class="card-number">Eintrag 40</span>
+            <h3 class="card-title">Die Bewertungsmatrix</h3>
+        </a>
+        <a href="he41.html" class="card">
+            <span class="card-number">Eintrag 41</span>
+            <h3 class="card-title">Operatoren entschlüsseln</h3>
+        </a>
+        <a href="he42.html" class="card">
+            <span class="card-number">Eintrag 42</span>
+            <h3 class="card-title">Argumentationsstrukturen knacken</h3>
+        </a>
+        <a href="he43.html" class="card">
+            <span class="card-number">Eintrag 43</span>
+            <h3 class="card-title">Rhetorische Stilmittel</h3>
+        </a>
+        <a href="he44.html" class="card">
+            <span class="card-number">Eintrag 44</span>
+            <h3 class="card-title">Pflichtthema: Sprachwandel vs. Sprachverfall</h3>
+        </a>
+        <a href="he45.html" class="card">
+            <span class="card-number">Eintrag 45</span>
+            <h3 class="card-title">Pflichtthema: Digitale Revolution der Sprache</h3>
+        </a>
+        <a href="he46.html" class="card">
+            <span class="card-number">Eintrag 46</span>
+            <h3 class="card-title">Karikaturen & Statistiken meistern</h3>
+        </a>
+        <a href="he47.html" class="card">
+            <span class="card-number">Eintrag 47</span>
+            <h3 class="card-title">Journalistischen Tonfall treffen</h3>
+        </a>
+        <a href="he48.html" class="card">
+            <span class="card-number">Eintrag 48</span>
+            <h3 class="card-title">Pflichtthema: Innere Mehrsprachigkeit</h3>
+        </a>
+        <a href="he49.html" class="card">
+            <span class="card-number">Eintrag 49</span>
+            <h3 class="card-title">Pflichtthema: Psychoanalyse in der Literatur</h3>
+        </a>
+        <a href="he50.html" class="card">
+            <span class="card-number">Eintrag 50</span>
+            <h3 class="card-title">Pflichtthema: Sprache, Denken, Wirklichkeit</h3>
+        </a>
+        <a href="he51.html" class="card">
+            <span class="card-number">Eintrag 51</span>
+            <h3 class="card-title">Pflichtthema: Kommunikationsmodelle</h3>
+        </a>
+        <a href="he52.html" class="card">
+            <span class="card-number">Eintrag 52</span>
+            <h3 class="card-title">Sachtextarten im Dossier</h3>
+        </a>
+        <a href="he53.html" class="card">
+            <span class="card-number">Eintrag 53</span>
+            <h3 class="card-title">Quellenkritik & Desinformation</h3>
+        </a>
+        <a href="he54.html" class="card">
+            <span class="card-number">Eintrag 54</span>
+            <h3 class="card-title">Die Last-Minute-Checkliste</h3>
+        </a>
+        <a href="he55.html" class="card">
+            <span class="card-number">Eintrag 55</span>
+            <h3 class="card-title">Krisenmanagement & Mindset</h3>
+        </a>
+
+        <!-- Das große Finale -->
+        <a href="he56.html" class="card gold">
+            <span class="card-number">Eintrag 56</span>
+            <h3 class="card-title">Der ultimative Spickzettel (Fachbegriffe)</h3>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
