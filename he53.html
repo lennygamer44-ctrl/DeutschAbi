@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Quellenkritik und Desinformation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        .highlight-red {
+            color: #c62828;
+            font-weight: bold;
+        }
+        
+        .highlight-green {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🕵️‍♀️ Hefteintrag <span class="number">53</span>: Quellenkritik und Desinformation – Wie du manipulative Materialien entlarvst und bewertest</h1>
+
+    <div class="box fact-box">
+        <p>Wenn du im Abitur (besonders im Themenfeld Sprache und Medien) ein Material-Dossier bearbeitest, darfst du niemals davon ausgehen, dass jeder abgedruckte Text automatisch „die Wahrheit“ sagt. Das Kultusministerium legt dir absichtlich auch unseriöse, extreme oder manipulative Quellen (z.B. einen reißerischen Blogbeitrag oder einen polemischen Foreneintrag) vor.</p>
+        <p>Wenn du diese Texte unkritisch wie ein wissenschaftliches Gesetz behandelst, stürzt du im Anforderungsbereich <span class="number">III</span> (<strong><span class="smart-word">Reflexion</span></strong>) gnadenlos ab. Du musst beweisen, dass du zur Quellenkritik fähig bist und die Mechanismen digitaler Desinformation durchschaust.</p>
+    </div>
+
+    <section>
+        <h2>🤥 <span class="number">1.</span> Der Unterschied zwischen Fehl- und Desinformation (Vokabeln für Profis)</h2>
+        <p>Nicht jede falsche Aussage im Material ist eine böswillige Lüge. Um das Verhalten der Autoren oder die im Material geschilderten Phänomene präzise zu benennen, musst du diese Fachbegriffe unterscheiden:</p>
+        
+        <div class="box def-box">
+            <ul>
+                <li><strong><span class="smart-word">Misinformation</span> (Fehlinformation):</strong> Jemand verbreitet falsche Informationen, aber ohne böse Absicht. Er hat sich einfach geirrt, eine Statistik falsch gelesen oder einen alten Artikel geteilt, der nicht mehr aktuell ist. (Der Fehler passiert aus Unwissenheit).</li>
+                <li><strong><span class="smart-word">Desinformation</span> (Gezielte Manipulation):</strong> Das ist der gefährliche Teil. Hier werden falsche oder irreführende Informationen absichtlich erschaffen und verbreitet. Das Ziel ist es, Geld zu verdienen (durch Klicks), dem politischen Gegner zu schaden oder die Gesellschaft gezielt zu spalten (Polarisierung). Sogenannte „Fake News“ fallen genau in diese Kategorie.</li>
+                <li><strong><span class="smart-word">Malinformation</span>:</strong> Die Information an sich ist zwar wahr (z. B. ein gehacktes privates Foto oder ein aus dem Kontext gerissenes Zitat), sie wird aber absichtlich veröffentlicht, um einer Person maximalen Schaden zuzufügen.</li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Dein Satz-Tuning:</strong></p>
+            <p><em>„Während der Autor in Material <span class="number">1</span> die Problematik lediglich auf unbeabsichtigte Fehlinformationen durch mangelnde Medienkompetenz reduziert, verdeutlichen die Statistiken aus Material <span class="number">3</span>, dass die eigentliche Gefahr für den demokratischen Diskurs in der gezielten, strategischen <span class="smart-word">Desinformation</span> liegt.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🎣 <span class="number">2.</span> Die Mechanik der Aufmerksamkeitsökonomie (Clickbaiting)</h2>
+        <p>Oft hast du Materialien vorliegen, die sich mit der Frage beschäftigen, warum sich Lügen im Internet eigentlich viel schneller verbreiten als die langweilige Wahrheit.</p>
+        
+        <div class="box fact-box">
+            <p><strong>Das Konzept:</strong> Wir leben im Internet in einer sogenannten <strong><span class="smart-word">Aufmerksamkeitsökonomie</span></strong>. Das bedeutet: Die Währung im Netz ist nicht die Wahrheit, sondern die Aufmerksamkeit des Nutzers (Klicks, Likes, Shares). Je mehr Klicks ein Artikel hat, desto mehr Werbeeinnahmen generiert er.</p>
+        </div>
+
+        <div class="box def-box">
+            <ul>
+                <li><strong><span class="smart-word">Clickbaiting</span> (Klickköder):</strong> Um in der Masse aufzufallen, nutzen Autoren extreme Übertreibungen, reißerische Überschriften oder schüren gezielt Angst und Empörung (<em>„Du wirst nicht glauben, was dieser Politiker gesagt hat!“</em>).</li>
+                <li><strong>Die psychologische Folge:</strong> Da Algorithmen (siehe Hefteintrag <span class="number">45</span>) Beiträge bevorzugen, die starke Emotionen (meist Wut) auslösen, werden Fake News systematisch nach oben gespült, während sachliche Richtigstellungen im Algorithmus untergehen.</li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Dein Satz-Tuning:</strong></p>
+            <p><em>„Dass seriöser Journalismus in den sozialen Netzwerken zunehmend an Reichweite verliert, ist den Mechanismen der <span class="smart-word">Aufmerksamkeitsökonomie</span> geschuldet. Wie die Analyse des Medienforschers (Material <span class="number">2</span>) belegt, belohnen die Algorithmen primär emotionalisierendes <span class="smart-word">Clickbaiting</span>, wodurch sich Desinformationen rasanter verbreiten als faktengestützte Nachrichten.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🪞 <span class="number">3.</span> Warum wir auf Fake News hereinfallen: Der Bestätigungsfehler (Confirmation Bias)</h2>
+        <p>Wenn dein Material die Frage aufwirft, warum selbst intelligente Menschen an absurde Verschwörungstheorien oder offensichtliche Falschmeldungen glauben, musst du dein psychologisches Eigenwissen ausspielen.</p>
+        
+        <div class="box fact-box">
+            <p><strong>Der Fachbegriff:</strong> Der Mensch leidet unter dem sogenannten <strong><span class="smart-word">Bestätigungsfehler (Confirmation Bias)</span></strong>.</p>
+        </div>
+
+        <div class="box def-box">
+            <p><strong>Die Erklärung:</strong> Unser Gehirn ist faul (kognitive Ökonomie). Wenn wir eine Nachricht lesen, die unserer bereits bestehenden Meinung entspricht, glauben wir sie sofort und leiten sie ungeprüft weiter. Wir fühlen uns bestätigt. Lesen wir hingegen eine Information, die unserem Weltbild widerspricht, werden wir extrem kritisch, suchen nach Fehlern im Text oder lehnen die Quelle als „Lügenpresse“ ab. Wir filtern die Realität also unbewusst so, dass sie in unseren Kopf passt.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Dein Satz-Tuning:</strong></p>
+            <p><em>„Die von der Soziologin in Material <span class="number">4</span> kritisierte Resistenz vieler Internetnutzer gegenüber Fakten-Checks lässt sich psychologisch durch den sogenannten <span class="smart-word">Bestätigungsfehler (Confirmation Bias)</span> erklären. Die Konsumenten verifizieren Quellen nicht nach ihrem Wahrheitsgehalt, sondern selektieren sie unbewusst danach, ob sie das eigene, bereits vorgefertigte Weltbild stützen.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🤖 <span class="number">4.</span> Die neue Gefahr: Deepfakes und KI-generierte Inhalte (Abitur <span class="number">2026</span>!)</h2>
+        <p>Da du im Jahr <span class="number">2026</span> Abitur machst, ist das Thema Künstliche Intelligenz ein hochaktueller und sehr wahrscheinlicher Gegenstand der Prüfungsaufgaben.</p>
+        
+        <div class="box fact-box">
+            <p><strong>Das Problem:</strong> Früher galt der Spruch: <em>„Ich glaube nur, was ich mit eigenen Augen sehe.“</em> Durch KI (Generative Künstliche Intelligenz) ist dieser Leitsatz obsolet geworden.</p>
+            <ul>
+                <li><strong><span class="smart-word">Deepfakes</span>:</strong> Das sind täuschend echte, KI-generierte Bilder, Audio-Dateien oder Videos, in denen Personen Dinge tun oder sagen, die sie in Wahrheit nie getan haben (z.B. ein manipuliertes Video eines Politikers, der den Krieg erklärt).</li>
+                <li><strong>Die gesellschaftliche Auswirkung (Die „<span class="smart-word">Liar’s Dividend</span>“):</strong> Das eigentliche Problem ist nicht nur, dass wir Lügen für die Wahrheit halten. Das viel größere Problem (die sogenannte <em>Liar’s Dividend</em> / die Dividende des Lügners) ist, dass echte Straftäter plötzlich behaupten können: <em>„Das auf dem echten Beweisvideo bin gar nicht ich, das ist ein Deepfake!“</em> Das grundlegende Vertrauen der Gesellschaft in jedes visuelle Beweismittel wird zerstört (Vertrauenskrise).</li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Dein Satz-Tuning:</strong></p>
+            <p><em>„Mit dem Aufkommen generativer Künstlicher Intelligenz, auf die der Autor in Material <span class="number">5</span> verweist, erreicht die mediale Manipulation eine neue Eskalationsstufe. Sogenannte <span class="smart-word">Deepfakes</span> untergraben nicht nur die Unterscheidbarkeit von Fakt und Fiktion, sondern provozieren eine fundamentale Vertrauenskrise in jegliche Form der digitalen Berichterstattung.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🔍 <span class="number">5.</span> Der Quellenkritik-Filter für deinen Aufsatz (Die CRAAP-Methode in Aktion)</h2>
+        <p>Wenn du in deinem informierenden Text (z.B. für die Schulhomepage) den Lesern Ratschläge geben sollst, wie sie Fake News erkennen, nutze Prinzipien aus der wissenschaftlichen Quellenkritik. Beziehe dich dabei auf folgende Kriterien:</p>
+        
+        <div class="box def-box">
+            <ul>
+                <li><strong>Intention (Absicht):</strong> Will die Quelle nur informieren (Tagesschau) oder will sie mich wütend machen, um mir im nächsten Absatz ein Produkt oder eine politische Ideologie zu verkaufen?</li>
+                <li><strong>Transparenz (Autorschaft):</strong> Gibt es ein echtes Impressum? Steht ein realer Name unter dem Artikel oder versteckt sich der Autor hinter einem Pseudonym?</li>
+                <li><strong>Plausibilität & Belege:</strong> Nennt der Autor für seine wilden Thesen überprüfbare Quellen (z.B. Links zu echten Studien), oder behauptet er nur düster: <em>„Wie man in informierten Kreisen weiß...“</em>?</li>
+            </ul>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Die Einbindung in deinen Schluss-Appell:</strong></p>
+            <p><em>„Um dieser Flut an Desinformation (Material <span class="number">1</span>) nicht schutzlos ausgeliefert zu sein, bedarf es einer konsequenten Stärkung der Quellenkritik. Nur wer die Intention eines Autors hinterfragt, emotionale Zuspitzungen als <span class="smart-word">Clickbaiting</span> entlarvt und Fakten abseits des eigenen <span class="smart-word">Bestätigungsfehlers</span> verifiziert, kann sich kompetent im digitalen Diskurs bewegen.“</em></p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
