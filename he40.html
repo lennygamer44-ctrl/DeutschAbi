@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Die Bewertungsmatrix der Korrektoren</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        .highlight-red {
+            color: #c62828;
+            font-weight: bold;
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🕵️‍♂️ Hefteintrag <span class="number">40</span>: Blick hinter die Kulissen – Die Bewertungsmatrix der Korrektoren (Wie deine Punkte wirklich berechnet werden)</h1>
+
+    <section>
+        <h2>🧠 <span class="number">1.</span> Warum du wissen musst, wie der Prüfer denkt (Das Prinzip des "<span class="smart-word">Reverse Engineering</span>")</h2>
+        <div class="box fact-box">
+            <p>Ein Abituraufsatz ist kein Kunstwerk, das nach dem persönlichen Geschmack des Lehrers bewertet wird. Es ist ein standardisiertes Produkt, das anhand einer extrem strengen, staatlichen Checkliste (der sogenannten Bewertungsmatrix oder dem Erwartungshorizont) abgehakt wird.</p>
+        </div>
+        
+        <div class="box smart-box">
+            <p>Wenn du diese Checkliste im Kopf hast, kannst du deinen Text genau so konstruieren, dass er dem Korrektor die Punkte förmlich aufdrängt. Man nennt das <strong>„<span class="smart-word">Reverse Engineering</span>“</strong> (vom Endergebnis rückwärts arbeiten).</p>
+        </div>
+
+        <p>Die Endnote in Deutsch setzt sich immer aus <span class="number">zwei</span> großen Säulen zusammen: Der <strong><span class="smart-word">Inhaltsleistung</span></strong> (Was schreibst du?) und der <strong><span class="smart-word">Darstellungsleistung</span></strong> (Wie schreibst du es?). Beide Säulen sind enorm wichtig, aber sie funktionieren nach unterschiedlichen Regeln.</p>
+    </section>
+
+    <section>
+        <h2>✅ <span class="number">2.</span> Säule <span class="number">1</span>: Die Inhaltsleistung (Das Sammeln der "Häkchen")</h2>
+        <p>In diesem Bereich arbeitet der Korrektor fast wie eine Maschine. Er sucht in deinem Text nach ganz bestimmten Fakten. Findet er sie, macht er ein Häkchen am Rand. Hier holst du die absoluten Grundpunkte, um überhaupt zu bestehen.</p>
+        
+        <div class="box def-box">
+            <ul>
+                <li><strong>Kriterium A (Die Materialauswertung):</strong> Der Prüfer hat eine Liste mit den Kernaspekten aus allen <span class="number">5</span> bis <span class="number">7</span> Materialien. Dein Text wird daraufhin gescannt, ob du alle zwingend geforderten Aspekte (Ursachen, Folgen, Beispiele) eingebaut hast. Fehlt ein komplettes Material, obwohl <em>„Gehen Sie auf die Materialien ein“</em> in der Aufgabe stand, verlierst du hier sofort massiv Punkte.</li>
+                <li><strong>Kriterium B (Die <span class="smart-word">Syntheseleistung</span>):</strong> Der Prüfer prüft, ob du den "Perlenketten-Fehler" (Hefteintrag <span class="number">25</span>) gemacht hast. Hast du die Materialien klug nach Themen gebündelt und miteinander in Beziehung gesetzt (Vergleich, Widerspruch, Ergänzung)?</li>
+                <li><strong>Kriterium C (Das <span class="smart-word">Eigenwissen</span>):</strong> Hier entscheidet sich, ob du im Mittelfeld bleibst oder in den <span class="number">1</span>-er Bereich aufsteigst. Der Prüfer sucht explizit nach Fachbegriffen aus dem Unterricht (z. B. Framing, Naturalismus, Sekundenstil). Ein Text, der das Material perfekt zusammenfasst, aber null eigenes Vorwissen enthält, kann im Inhalt niemals <span class="number">15</span> Punkte erreichen, weil die Anforderungsbereiche <span class="number">II</span> und <span class="number">III</span> (Transfer und Reflexion) fehlen.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🎁 <span class="number">3.</span> Säule <span class="number">2</span>: Die Darstellungsleistung (Der Hebel für die Bestnote)</h2>
+        <p>Hier geht es nicht mehr um die nackten Fakten, sondern um die Verpackung. Viele Schüler haben im Inhalt <span class="number">12</span> Punkte, stürzen aber in der Darstellungsleistung auf <span class="number">6</span> Punkte ab, weil sie diesen Bereich unterschätzen. Hier achtet der Korrektor auf <span class="number">vier</span> Dinge:</p>
+        
+        <div class="box smart-box">
+            <ul>
+                <li><strong>Kriterium A (Textsortenmerkmale & Adressatenbezug):</strong> Hast du die Bühne betreten, die dir die Aufgabe gebaut hat? Gibt es eine Überschrift/Anrede? Ist der Text für das geforderte Publikum (z. B. Eltern oder Schüler) verständlich formuliert? Wer in einem Lexikonartikel den Leser mit "Du" anspricht, bekommt hier sofort einen Strich durch die Rechnung.</li>
+                <li><strong>Kriterium B (Aufbau & Roter Faden):</strong> Gibt es eine logische Einleitung, einen strukturierten Hauptteil und einen runden Schluss? Sind die Absätze durch sinnvolle Scharnierwörter (<span class="smart-word">Kohäsion</span>, siehe Hefteintrag <span class="number">37</span>) miteinander verknüpft?</li>
+                <li><strong>Kriterium C (Sprachrichtigkeit & Zitation):</strong> Beherrschst du den <span class="smart-word">Konjunktiv I</span> bei der indirekten Rede? Hast du wörtliche Zitate fehlerfrei in den eigenen Satzbau integriert (ohne Zitat-Drops)?</li>
+                <li><strong>Kriterium D (Ausdruck & Stil):</strong> Hier belohnt der Prüfer den Nominalstil, eine hohe syntaktische Varianz (Wechsel aus Haupt- und Nebensätzen) und einen erwachsenen, treffenden Wortschatz (Verzicht auf "sagen" und "machen").</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>☠️ <span class="number">4.</span> Der unsichtbare Notenkiller: Der Fehlerquotient (Abzugsbereich)</h2>
+        <div class="box fact-box">
+            <p>Selbst wenn dein Inhalt brillant ist und dein Stil an Goethe erinnert: Wenn dein Text vor Rechtschreib- und Grammatikfehlern wimmelt, wird dir am Ende gnadenlos die Note gekürzt.</p>
+            <p>Das Kultusministerium legt fest, dass bei gehäuften Verstößen gegen die sprachliche Richtigkeit (Rechtschreibung, Zeichensetzung, Grammatik) ein pauschaler <strong>Punktabzug von bis zu <span class="number">zwei</span> Notenpunkten</strong> von der Gesamtpunktzahl vorgenommen werden muss.</p>
+        </div>
+
+        <div class="box def-box">
+            <p><strong>Die <span class="highlight-red">tödliche Dreifaltigkeit</span>:</strong> Die Prüfer achten besonders allergisch auf <span class="number">drei</span> Dinge:</p>
+            <ul>
+                <li><span class="number">1.</span> Das/Dass-Fehler</li>
+                <li><span class="number">2.</span> Fehlende Kommas bei Relativ- und Nebensätzen</li>
+                <li><span class="number">3.</span> Falsche Groß-/Kleinschreibung</li>
+            </ul>
+            <p><em>(Deshalb ist Phase <span class="number">4</span>, das <span class="number">45</span>-minütige Korrekturlesen aus Hefteintrag <span class="number">35</span>, deine wichtigste Lebensversicherung!)</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>😇 <span class="number">5.</span> Die Psychologie des Korrektors (Der "<span class="smart-word">Halo-Effekt</span>")</h2>
+        <p>Prüfer sind auch nur Menschen. In der Psychologie gibt es den sogenannten <strong>„<span class="smart-word">Halo-Effekt</span>“</strong> (Heiligenschein-Effekt).</p>
+        
+        <div class="box fact-box">
+            <p>Er besagt: Wenn ein einzelnes Merkmal an einer Sache extrem positiv (oder negativ) auffällt, überstrahlt es unbewusst die Bewertung aller anderen Merkmale.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Wie du das für dich nutzt:</strong></p>
+            <ul>
+                <li><strong>Das Schriftbild:</strong> Eine saubere, leserliche Handschrift mit klaren Absätzen (lass immer eine halbe Zeile Platz zwischen Einleitung, Hauptteil und Schluss) macht den Prüfer sofort milde gestimmt. Ein durchgestrichenes, gequetschtes Chaos erzeugt unbewusst sofort eine negative und strengere Grundhaltung beim Lesen.</li>
+                <li><strong>Der erste Eindruck:</strong> Wenn dein allererster Satz (die Einleitung) absolut fehlerfrei ist, ein tolles Alltagsbeispiel enthält und ein elegantes Fremdwort nutzt, denkt der Prüfer sofort: <em>„Ah, ein starker Schüler!“</em> Diesen positiven „Heiligenschein“ nimmt er auf die nächsten Seiten mit und bewertet kleine Fehler im Hauptteil oft großzügiger. <strong>Setze also <span class="number">200</span> % deiner Konzentration auf den ersten Absatz!</strong></li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
