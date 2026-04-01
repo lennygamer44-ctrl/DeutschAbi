@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Motive um 1900</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎯 Hefteintrag <span class="number">29</span>: Pflichtthema <span class="number">2026</span> (Teil <span class="number">4</span>) – Die zentralen Motive um <span class="number">1900</span> erkennen und benennen</h1>
+
+    <div class="box fact-box">
+        <p>Die Epochenbegriffe (Naturalismus, Expressionismus etc.) aus dem letzten Eintrag sind wichtig für den groben Rahmen. Was dir in der Klausur aber noch mehr Punkte bringt, ist das Erkennen der konkreten <strong><span class="smart-word">Motive</span></strong> in den beigelegten literarischen Texten.</p>
+        <p>Ein Motiv ist ein inhaltlicher Baustein, der in der Literatur dieser Zeit immer wieder auftaucht. Wenn du diese Motive im Material erkennst und mit Fachbegriffen benennst, zeigst du herausragendes <span class="smart-word">Eigenwissen</span>.</p>
+    </div>
+
+    <section>
+        <h2>🏙️ <span class="number">1.</span> Das Großstadtmotiv (Der Moloch und die Maschine)</h2>
+        <p>Die rasante Urbanisierung um <span class="number">1900</span> machte die Großstadt (vor allem Berlin) zum absoluten Hauptschauplatz der Literatur.</p>
+        
+        <div class="box def-box">
+            <p><strong>Wie es dargestellt wird:</strong> Die Stadt wird fast nie als schöner, romantischer Ort beschrieben. Sie ist ein „Moloch“ (ein menschenfressendes Ungeheuer). Die Straßen sind laut, schmutzig und voller anonymer Massen. Die Stadt wirkt wie eine gigantische, seelenlose Maschine, in der der einzelne Mensch nur ein winziges, unbedeutendes Zahnrad ist.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Deine Formulierung für den Aufsatz:</strong> <em>„Das vorliegende Gedicht nutzt das für diese Zeit typische <span class="smart-word">Großstadtmotiv</span>. Die Stadt wird hier als bedrohlicher Raum inszeniert, was die Reizüberflutung und die Anonymität des modernen Menschen am Beginn des <span class="number">20.</span> Jahrhunderts widerspiegelt.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🥀 <span class="number">2.</span> Das Motiv der Dekadenz (Faszination für Verfall und Krankheit)</h2>
+        <p>Besonders im Fin de Siècle (der Jahrhundertwende) gab es eine morbide (kränkliche) Faszination für alles, was kaputtgeht. Man spürte, dass das alte Kaiserreich dem Untergang geweiht war.</p>
+        
+        <div class="box def-box">
+            <p><strong>Wie es dargestellt wird:</strong> Die Figuren in diesen Texten sind oft blass, kränklich, überempfindlich, melancholisch oder lebensmüde (ein berühmtes Beispiel ist Thomas Manns Roman „Buddenbrooks“, der den „Verfall einer Familie“ beschreibt). Gesundheit und Vitalität wurden oft als primitiv abgelehnt; das Kranke galt als verfeinert und künstlerisch wertvoll.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Deine Formulierung für den Aufsatz:</strong> <em>„Die auffällige Häufung von Wörtern aus dem Wortfeld Krankheit und Tod verweist auf das literarische <span class="smart-word">Motiv der Dekadenz</span>. Der Autor verbildlicht damit das Lebensgefühl einer Epoche, die sich selbst im moralischen und körperlichen Verfall sah.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>⚡ <span class="number">3.</span> Der Vater-Sohn-Konflikt (Rebellion gegen die alte Welt)</h2>
+        <p>Um <span class="number">1900</span> (und besonders dann im Expressionismus) prallten <span class="number">zwei</span> Welten hart aufeinander: Die alte, strenge Welt des Kaiserreichs und die junge Generation, die aus diesen starren Regeln ausbrechen wollte.</p>
+        
+        <div class="box def-box">
+            <p><strong>Wie es dargestellt wird:</strong> Die Väter in der Literatur stehen für den Staat, den Gehorsam, den Kapitalismus und die gefühlskalte Vernunft. Die Söhne leiden unter dieser Autorität, fühlen sich unterdrückt und rebellieren dagegen (oder zerbrechen daran, wie oft bei Franz Kafka).</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Deine Formulierung für den Aufsatz:</strong> <em>„Der im Text beschriebene Streit zwischen den Generationen ist ein klassischer <span class="smart-word">Vater-Sohn-Konflikt</span>. Der Vater fungiert hierbei als Repräsentant der starren wilhelminischen Autorität, gegen die das Individuum um <span class="number">1900</span> verzweifelt aufbegehrt.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🪞 <span class="number">4.</span> Das Motiv der Entfremdung und des Ich-Verlusts</h2>
+        <p>Wie in Hefteintrag <span class="number">27</span> (Freud, Darwin) besprochen, wusste der Mensch um <span class="number">1900</span> nicht mehr, wer er eigentlich ist.</p>
+        
+        <div class="box def-box">
+            <p><strong>Wie es dargestellt wird:</strong> Figuren erkennen sich selbst im Spiegel nicht mehr. Sie fühlen sich fremd im eigenen Körper oder fremd in der Gesellschaft. Sie handeln wie ferngesteuerte Marionetten oder rutschen in den Wahnsinn ab. Oft taucht auch das Motiv des Doppelgängers auf, das die innere Zerrissenheit der menschlichen Psyche zeigt.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Deine Formulierung für den Aufsatz:</strong> <em>„Das Verhalten der Hauptfigur illustriert das zentrale <span class="smart-word">Motiv der Entfremdung</span>. Gestützt durch die damaligen Erkenntnisse der Psychoanalyse wird hier ein zersplittertes Ich gezeichnet, das die Kontrolle über die eigenen Handlungen verloren hat.“</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>👁️ <span class="number">5.</span> Der „Scanner-Blick“ für die Prüfung</h2>
+        <div class="box fact-box">
+            <p>Wenn du in der Abiturprüfung das literarische Material (z.B. Material <span class="number">4</span>: Ein Gedicht oder ein Romanauszug von <span class="number">1910</span>) aufschlägst, suchst du nicht nach „irgendwelchen“ Auffälligkeiten.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Du scannst den Text gezielt nach diesen <span class="number">vier</span> Motiven ab:</strong></p>
+            <ul>
+                <li>Geht es um eine laute Stadt?</li>
+                <li>Geht es um Krankheit/Tod?</li>
+                <li>Streiten sich Alt und Jung?</li>
+                <li>Verliert jemand den Verstand?</li>
+            </ul>
+            <p>Sobald du einen Treffer hast, hast du sofort deinen Ansatzpunkt, um das Material professionell mit deinem historischen <span class="smart-word">Eigenwissen</span> zu verknüpfen.</p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
