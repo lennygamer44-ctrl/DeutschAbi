@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernzettel: Texte auswerten</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --text-main: #333333;
+            --heading-color: #1a237e; /* Dunkles Blau */
+            --heading-secondary: #263238; /* Anthrazit */
+            
+            /* Boxen Farben */
+            --def-bg: #e3f2fd; /* Hellblau */
+            --def-border: #2196f3;
+            --fact-bg: #f5f5f5; /* Dezent Grau */
+            --fact-border: #9e9e9e;
+            --smart-bg: #e8f5e9; /* Hellgrün */
+            --smart-border: #4caf50;
+            
+            /* Signal Farbe */
+            --signal-number: #e65100; /* Dunkles Orange */
+            --smart-word-text: #2e7d32; /* Dunkelgrün für Text in Boxen */
+        }
+
+        body {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 50px 60px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2em;
+            font-weight: 700;
+            border-bottom: 3px solid var(--heading-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-secondary);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Lernpsychologische Boxen */
+        .box {
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .box p:last-child, .box ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .def-box {
+            background-color: var(--def-bg);
+            border-left: 6px solid var(--def-border);
+        }
+
+        .fact-box {
+            background-color: var(--fact-bg);
+            border-left: 6px solid var(--fact-border);
+        }
+
+        .smart-box {
+            background-color: var(--smart-bg);
+            border-left: 6px solid var(--smart-border);
+        }
+
+        /* Textauszeichnungen */
+        .number {
+            font-weight: 700;
+            color: var(--signal-number);
+            font-size: 1.1em;
+        }
+
+        .smart-word {
+            font-weight: 700;
+            color: var(--smart-word-text);
+        }
+
+        /* Print-Optimierung */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .box {
+                page-break-inside: avoid;
+                border: 1px solid #ddd;
+                border-left-width: 6px;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            p, li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📖 Hefteintrag <span class="number">21</span>: Texte auswerten – Wie du die wichtigsten Infos schnell filterst, ohne alles im Detail zu verstehen</h1>
+
+    <section>
+        <h2>⏳ <span class="number">1.</span> Die Zeitfalle beim Lesen der Materialien</h2>
+        <div class="box fact-box">
+            <p>In der Abiturprüfung bekommst du für das Format <span class="number">III</span> ein ganzes Dossier an Quellen (oft <span class="number">5</span> bis <span class="number">9</span> verschiedene Materialien). Das können insgesamt über <span class="number">1000</span> Wörter reines Fremdmaterial sein.</p>
+            <p><strong>Der größte Fehler:</strong> Du liest jeden Text wie einen Roman, Satz für Satz, von vorne bis hinten durch. Wenn du das tust, bist du nach <span class="number">60</span> Minuten völlig erschöpft und hast noch kein einziges Wort deines eigenen Aufsatzes geschrieben.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p>Du musst lernen, die Papiere als bloße <strong>„<span class="smart-word">Informations-Steinbrüche</span>“</strong> zu betrachten. Du gehst nur hinein, um dir die passenden Steine (Fakten) für dein eigenes Haus (deinen Text) zu holen.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>👁️ <span class="number">2.</span> Die Technik des „diskursiven Lesens“ (Der Scanner-Blick)</h2>
+        <p>Die offizielle Vorbereitungs-Checkliste des Kultusministeriums fordert, dass du das „<span class="smart-word">diskursive Lesen</span>“ beherrschst.</p>
+        
+        <div class="box def-box">
+            <p><strong>Wie es funktioniert:</strong> Du liest nicht, du scannst. Bevor du einen Text anschaust, hast du deine Aufgabenstellung (die Leitfragen) im Kopf. Dein Auge gleitet dann über den Text und sucht nur nach Signalwörtern, die zu diesen Fragen passen.</p>
+        </div>
+
+        <p><strong>Beispiel:</strong> Wenn die Aufgabe lautet <em>„Informieren Sie über die Risiken des Dialektverlusts“</em>, dann überfliegst du Material <span class="number">1</span> und suchst gezielt nach Wörtern wie <em>Nachteil, Gefahr, Problem, Verlust, Studie zeigt</em>. Alles andere in diesem Text ignorierst du vorerst.</p>
+    </section>
+
+    <section>
+        <h2>🎯 <span class="number">3.</span> Der Erste-und-Letzte-Satz-Trick (Die Kernaspekte finden)</h2>
+        <p>Wenn die Aufgabe fordert, dass du die „<span class="smart-word">Kernaspekte</span>“ der Materialien zusammenfasst, musst du wissen, wie Sachtexte und journalistische Artikel aufgebaut sind.</p>
+        
+        <div class="box fact-box">
+            <p>Die Kernbehauptung (die wichtigste Aussage) eines Autors steht fast immer im <strong>ersten</strong> oder im <strong>letzten Satz</strong> eines Absatzes.</p>
+            <p>Alles, was dazwischen steht, sind in der Regel nur ausschmückende Beispiele, unwichtige Zitate anderer Leute oder Wiederholungen.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p>Wenn du unter Zeitdruck stehst, lies dir bei einem langen Material nur die Absatzanfänge und Absatzenden durch. So hast du in <span class="number">2</span> Minuten den kompletten Kern des Textes erfasst.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🕳️ <span class="number">4.</span> Mut zur Lücke (Fachchinesisch gnadenlos ignorieren)</h2>
+        <p>Das Ministerium legt absichtlich Materialien bei, die Auszüge aus hochwissenschaftlichen Büchern oder Studien sind. Diese wimmeln von Fremdwörtern und abstrakten Formulierungen.</p>
+        
+        <div class="box fact-box">
+            <p><strong>Verfalle hier nicht in Panik!</strong> Du musst nicht jeden Satz im Detail verstehen.</p>
+        </div>
+
+        <div class="box def-box">
+            <p>Dein Job ist es ohnehin, die Inhalte für deine Zielgruppe (z.B. Eltern oder Mitschüler) zu „<span class="smart-word">übersetzen</span>“. Wenn du den Grundgedanken eines sperrigen Absatzes verstanden hast (z.B. <em>„Die Autorin meint, dass digitale Medien uns ablenken“</em>), dann reicht genau dieser Gedanke für deinen Aufsatz. Die komplizierte wissenschaftliche Begründung dahinter kannst du getrost weglassen.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🖍️ <span class="number">5.</span> Die Textmarker-Regel für die Stoffsammlung</h2>
+        <div class="box fact-box">
+            <p>Viele Schüler malen beim ersten Lesen sofort ganze Absätze gelb an. Wenn du dann später deine Grobgliederung machst und auf das Blatt schaust, siehst du nur eine gelbe Wand und musst alles nochmal lesen.</p>
+        </div>
+
+        <div class="box smart-box">
+            <p><strong>Die Regel lautet:</strong> Markiere niemals ganze Sätze! Markiere pro Absatz maximal <span class="number">drei</span> bis <span class="number">vier</span> Schlüsselwörter (Substantive oder Verben).</p>
+            <p>Nutze am besten <span class="number">zwei</span> verschiedene Farben, die zur Struktur deiner Aufgabe passen. (z. B. <strong>Grün</strong> für alle Chancen/Vorteile, die du im Text findest, und <strong>Rot</strong> für alle Risiken/Nachteile). So kannst du später alle grünen Markierungen direkt in den ersten Absatz deines Hauptteils übernehmen, ohne nachdenken zu müssen.</p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
